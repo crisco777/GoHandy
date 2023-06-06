@@ -17,6 +17,7 @@ return new class extends Migration
            $table->foreignIdFor(User::class)->constrained();
            $table->foreignIdFor(Service::class)->constrained();
            $table->primary(['user_id', 'service_id']);
+           $table->decimal('price');
         });
     }
 

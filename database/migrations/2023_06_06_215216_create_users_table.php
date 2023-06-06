@@ -20,17 +20,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->uuid('image');
             $table->string('contact');
             $table->foreignId('sex_id')->constrained();
             $table->foreignId('town_id')->constrained();
             $table->foreignIdFor(Role::class)->constrained();
             $table->string('address');
-
-
-
-
-
             $table->rememberToken();
             $table->timestamps();
 

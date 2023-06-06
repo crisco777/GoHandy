@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use App\Models\Work;
 use App\Models\Worker;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -16,8 +17,7 @@ return new class extends Migration
         Schema::create('evaluations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignIdFor(Worker::class)->constrained();
-            $table->foreignIdFor(User::class)->constrained();
+            $table->foreignIdFor(Work::class)->constrained();
             $table->integer('stars');
             $table->string('comment');
             $table->boolean('anonym');

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\User;
+use App\Models\Service;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,12 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('workers', function (Blueprint $table) {
+        Schema::create('works', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->text('name');
-            $table->decimal('price');
-            $table->foreignIdFor(User::class)->constrained();
+            $table->foreignId('client_id');
+            $table->foreignId('worker_id');
+            $table->foreignIdFor(Service::class)->constrained();
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('workers');
+        Schema::dropIfExists('works');
     }
 };

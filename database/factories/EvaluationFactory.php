@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Work;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,13 @@ class EvaluationFactory extends Factory
      */
     public function definition(): array
     {
+        $works = Work::all()->pluck('id');
+
         return [
-            //
+            'work_id'=> $works->random(),
+            'stars'=>fake()->numberBetween(1, 5),
+            'comment'=>fake()->text(255),
+            'anonym'=>fake()->boolean(),
         ];
     }
 }

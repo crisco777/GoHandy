@@ -47,4 +47,29 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class);
     }
+
+    public function sex()
+    {
+        return $this->belongsTo(Sex::class);
+    }
+
+    public function town()
+    {
+        return $this->belongsTo(Town::class);
+    }
+
+    public function work()
+    { return $this->belongsToMany(Work::class);
+    }
+
+    public function evaluation()
+    {
+        return $this->hasMany(Evaluation::class);
+    }
+
+    public function service()
+    {
+        return $this->belongsToMany(Evaluation::class);
+    }
+
 }

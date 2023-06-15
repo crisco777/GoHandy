@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Town extends Model
 {
     use HasFactory;
+
+    public function users()
+    {
+        return $this-> hasMany(User::class);
+    }
+
+    public function state()
+    {
+        return $this->belongsToMany(State::class);
+    }
 }

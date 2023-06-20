@@ -9,8 +9,8 @@ class Evaluation extends Model
 {
     use HasFactory;
 
-    public function users()
+    public function work()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Work::class);
     }
 }

@@ -62,11 +62,6 @@ class User extends Authenticatable
     { return $this->belongsToMany(Work::class);
     }
 
-    public function evaluation()
-    {
-        return $this->hasMany(Evaluation::class);
-    }
-
     public function service()
     {
         return $this->belongsToMany(Evaluation::class);

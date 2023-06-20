@@ -11,6 +11,11 @@ class State extends Model
 
     public function town()
     {
-        return $this->belongsToMany(Town::class);
+        return $this->hasMany(Town::class);
+    }
+
+    public function users()
+    {
+        return $this->hasManyThrough(User::class, Town::class);
     }
 }

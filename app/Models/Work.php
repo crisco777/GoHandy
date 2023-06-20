@@ -9,8 +9,21 @@ class Work extends Model
 {
     use HasFactory;
 
-    public function users()
+    public function service()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsTo(Service::class);
+    }
+
+    public function evaluation()
+    {
+        return $this->hasMany(Evaluation::class);
+    }
+
+    public function client(){
+        return $this->belongsTo(User::class, 'client_id');
+    }
+
+    public function worker(){
+        return $this->belongsTo(User::class, 'worker_id');
     }
 }

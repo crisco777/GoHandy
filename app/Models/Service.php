@@ -13,4 +13,9 @@ class Service extends Model
     {
         return $this->belongsToMany(User::class);
     }
+    public function work()
+    {
+        return $this->hasMany(Work::class);
+    }
+    
 }

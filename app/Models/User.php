@@ -67,4 +67,9 @@ class User extends Authenticatable
         return $this->belongsToMany(Evaluation::class);
     }
 
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
+
 }

@@ -10,6 +10,7 @@
         <x-input label="Contacto" name="contact" type="contact"/>
         <x-input label="Id sexo" name="sex_id" type="sex_id"/>
         <x-input label="Id municipio" name="town_id" type="town_id"/>
+        <x-input label="Rol" name="role" type="role"/>
         <x-input label="Dirección" name="address" type="address"/>
 
         <div class="col-auto">

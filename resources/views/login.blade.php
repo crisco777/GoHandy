@@ -1,6 +1,8 @@
 <x-layout>
     <form action="/login" method="POST">
         @csrf
+        <x-input label="Nombres" name="firstname" type="string"/>
+        <x-input label="Apellidos" name="lastname" type="string"/>
         <x-input label="Correo electronico" name="email" type="email"/>
         <x-input label="Contraseña" name="password" type="password"/>
 

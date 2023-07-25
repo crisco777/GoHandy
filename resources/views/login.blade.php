@@ -12,7 +12,7 @@
 
         <div class="signup">
             <form>
-                <label for="chk" aria-hidden="true">Sing up</label>
+                <label for="chk" aria-hidden="true">Sign up</label>
                 <input type="text" name="txt" placeholder="Username" required="">
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="Password" name="pswd" placeholder="Password" required="">

@@ -15,4 +15,5 @@
             <option value="{{ $role->id }}">{{ $role->name }}</option>
         @endforeach
     </select>
+
 </x-layout>

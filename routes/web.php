@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Role;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,16 +22,27 @@ Route::get('/', function () {
 
 Route::get('/login', function (){
     return view('login');
+})->name('login');
 
+Route::post('/login', function( ) {
+    $attributes= request()->validate([
+        'email'=> 'required|max:255',
+        'password'=> 'required|max:255'
+    ]);
+    if(Auth::attempt($attributes)) {
+        request()->session()->regenerate();
+        return redirect('logout');
+    }
+    return back()->withErrors([
+        'email'=>'No account found',
+    ]);
 });
 
-Route::post('/login', function(){
-
-}
-);
 
 Route::get('/signup', function (){
-    return view('signup');
+    return view('signup', [
+        'rol' => Role::where('id', request('rol'))->first(),
+    ]);
 
 });
 

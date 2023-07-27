@@ -2,6 +2,7 @@
 
 use App\Models\Role;
 use Illuminate\Support\Facades\Route;
+use League\CommonMark\Extension\Attributes\Node\Attributes;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +27,8 @@ Route::get('/login', function (){
 
 Route::post('/login', function( ) {
     $attributes= request()->validate([
-        'email'=> 'required|max:255',
-        'password'=> 'required|max:255'
+        'email'=> 'required|email|max:255',
+        'password'=> 'required|string|max:255'
     ]);
     if(Auth::attempt($attributes)) {
         request()->session()->regenerate();
@@ -39,6 +40,19 @@ Route::post('/login', function( ) {
 });
 
 
+Route::post('logout', function (){
+    Auth::logout();
+    request()->session()->regenerate();
+    return redirect('login');
+
+});
+
+Route::get('logout', function () {
+    return view('logout',[
+        'user'=>Auth::user(),
+    ]);
+})->middleware('auth');
+
 Route::get('/signup', function (){
     return view('signup', [
         'rol' => Role::where('id', request('rol'))->first(),
@@ -46,8 +60,4 @@ Route::get('/signup', function (){
 
 });
 
-Route::post('/signup', function(){
-
-}
-);
 

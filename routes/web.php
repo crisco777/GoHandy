@@ -15,8 +15,6 @@ use League\CommonMark\Extension\Attributes\Node\Attributes;
 |
 */
 
-Artisan::call('storage:link');
-
 Route::get('/', function () {
     return view('welcome');
 });

@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Role;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use League\CommonMark\Extension\Attributes\Node\Attributes;
 
@@ -55,7 +56,44 @@ Route::get('/signup', function (){
     return view('signup', [
         'rol' => Role::where('id', request('rol'))->first(),
     ]);
+});
 
+Route::post('/signup', function(){
+    $attributes = request()-> validate([
+        'email' => 'required|email|max:255|unique:users,email',
+        'password' =>'required|string|max:255|confirmed'
+    ]);
+
+    $user = User::create($attributes);
+
+    Auth::login($user);
+    request()->session()->regenerate();
+
+    return redirect('role');
+});
+
+Route::get('/role', function (){
+    return view('role');
 });
 
 
+Route::post('/role', function () {
+    $attributes = request()->validate([
+        'role_id' => 'required|integer|exists:roles,id'
+    ]);
+
+    Auth::user()->fill($attributes)->save();
+
+    return redirect();
+});
+
+    /*ESTO NO VA AQUI, SE OCUPA EN LA ULTIMA RUTA DONDE SE TERMINA DE LLENAR DATOS
+    Auth::user()->finished = true;
+    Auth::user()->save();
+});*/
+
+Route::get('home', function () {
+    if (Auth::user()->finished == false) {
+        return redirect('role');
+    }
+});

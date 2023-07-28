@@ -14,17 +14,18 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->integer('age');
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
+            $table->integer('age')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('contact');
-            $table->foreignId('sex_id')->constrained();
-            $table->foreignId('town_id')->constrained();
-            $table->foreignIdFor(Role::class)->constrained();
-            $table->string('address');
+            $table->string('contact')->nullable();
+            $table->foreignId('sex_id')->nullable()->constrained();
+            $table->foreignId('town_id')->nullable()->constrained();
+            $table->foreignIdFor(Role::class)->nullable()->constrained();
+            $table->string('address')->nullable();
+            $table->boolean('finished')->default(false);
             $table->rememberToken();
             $table->timestamps();
 

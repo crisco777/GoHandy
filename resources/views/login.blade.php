@@ -13,8 +13,8 @@
         <div class="signup">
             <form>
                 <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="text" placeholder="Nombre de usuario" required="">
                 <input type="email" name="email" placeholder="Correo" required="">
-                <input type="email_verified_at" name="email_verified_at" placeholder="Verificar correo" required="">
                 <input type="Password" name="pswd" placeholder="Contraseña" required="">
                 <button>Sign Up</button>
             </form>
@@ -22,11 +22,13 @@
         </div>
 
         <div class="login">
-            <form>
+            <form action="/login" method="POST">
+                @csrf
                 <label for="chk" aria-hidden="true">Login</label>
                 <input type="email" name="email" placeholder="Correo" required="">
-                <input type="Password" name="pswd" placeholder="Contraseña" required="">
+                <input type="Password" name="password" placeholder="Contraseña" required="">
                 <button>Login</button>
+                {{ $errors }}
             </form>
 
         </div>

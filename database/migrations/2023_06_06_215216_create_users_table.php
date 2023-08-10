@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('contact')->nullable();
             $table->foreignId('sex_id')->nullable()->constrained();
             $table->foreignId('town_id')->nullable()->constrained();
-            $table->foreignIdFor(Role::class)->nullable()->constrained();
+            $table->foreignIdFor(Role::class)->constrained();
             $table->string('address')->nullable();
             $table->boolean('finished')->default(false);
             $table->rememberToken();

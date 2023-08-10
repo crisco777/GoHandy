@@ -9,6 +9,10 @@ class State extends Model
 {
     use HasFactory;
 
+    protected $guarded = [
+        'id'
+    ];
+
     public function town()
     {
         return $this->hasMany(Town::class);

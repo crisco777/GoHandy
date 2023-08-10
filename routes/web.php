@@ -20,48 +20,43 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function (){
-    return view('login');
-})->name('login');
+Route::view('/login', 'login', [
+    'roles' => Role::all(),
+])->name('login');
 
-Route::post('/login', function( ) {
-    $attributes= request()->validate([
-        'email'=> 'required|email|max:255',
-        'password'=> 'required|string|max:255'
+Route::post('/login', function () {
+    $attributes = request()->validate([
+        'email' => 'required|email|max:255',
+        'password' => 'required|string|max:255'
     ]);
-    if(Auth::attempt($attributes)) {
+    if (Auth::attempt($attributes)) {
         request()->session()->regenerate();
         return redirect('logout');
     }
     return back()->withErrors([
-        'email'=>'No account found',
+        'email' => 'No account found',
     ]);
 });
 
 
-Route::post('logout', function (){
+/*Route::post('/logout', function () {
     Auth::logout();
     request()->session()->regenerate();
     return redirect('login');
 
 });
 
-Route::get('logout', function () {
-    return view('logout',[
-        'user'=>Auth::user(),
+Route::get('/logout', function () {
+    return view('logout', [
+        'user' => Auth::user(),
     ]);
-})->middleware('auth');
+})->middleware('auth');*/
 
-Route::get('/signup', function (){
-    return view('signup', [
-        'rol' => Role::where('id', request('rol'))->first(),
-    ]);
-});
-
-Route::post('/signup', function(){
-    $attributes = request()-> validate([
+Route::post('/signup', function () {
+    $attributes = request()->validate([
         'email' => 'required|email|max:255|unique:users,email',
-        'password' =>'required|string|max:255|confirmed'
+        'password' => 'required|string|max:255|confirmed',
+        'role_id' => 'required|integer|exists:roles,id'
     ]);
 
     $user = User::create($attributes);
@@ -69,14 +64,20 @@ Route::post('/signup', function(){
     Auth::login($user);
     request()->session()->regenerate();
 
-    return redirect('role');
+    return redirect('editprofile');
 });
 
-Route::get('/role', function (){
-    return view('role');
+Route::get('/home', function () {
+    return view('home');
 });
 
+Route::get('/editprofile', function () {
+    return view('editprofile', [
+        'userrole' => Auth::user()->role->type,
+    ]);
+});
 
+/*
 Route::post('/role', function () {
     $attributes = request()->validate([
         'role_id' => 'required|integer|exists:roles,id'
@@ -85,15 +86,27 @@ Route::post('/role', function () {
     Auth::user()->fill($attributes)->save();
 
     return redirect();
-});
+};
 
-    /*ESTO NO VA AQUI, SE OCUPA EN LA ULTIMA RUTA DONDE SE TERMINA DE LLENAR DATOS
+    ESTO NO VA AQUI, SE OCUPA EN LA ULTIMA RUTA DONDE SE TERMINA DE LLENAR DATOS
     Auth::user()->finished = true;
     Auth::user()->save();
-});*/
+});
 
-Route::get('home', function () {
+Route::get('/home', function () {
     if (Auth::user()->finished == false) {
         return redirect('role');
     }
+});
+*/
+Route::post('/userdata', function () {
+    $attributes = request()->validate([
+        'email' => 'required|email|max:255|unique:users,email',
+        'password' => 'required|string|max:255|confirmed',
+        'role_id' => 'required|integer|exists:roles,id'
+    ]);
+
+    Auth::user()->update($attributes);
+
+    return redirect('home');
 });

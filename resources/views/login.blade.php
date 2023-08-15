@@ -36,6 +36,7 @@
 
 
                 <form action="#">
+
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" name="email">
@@ -43,10 +44,6 @@
                     <div class="mb-4">
                         <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="password">
-                    </div>
-                    <div class="mb-4">
-                        <input type="checkbox" name="connected" class="form-check-input" id="">
-                        <label for="connected" class="form-check-label">mantener logeado</label>
                     </div>
 
                     <div class="d-grid">
@@ -70,7 +67,8 @@
 
 
 
-                <form action="#">
+                <form action="/signup" method="POST">
+                    @csrf
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" name="email">
@@ -80,16 +78,30 @@
                         <input type="password" class="form-control" name="password">
                     </div>
                     <div class="mb-4">
-                        <input type="checkbox" name="connected" class="form-check-input" id="">
-                        <label for="connected" class="form-check-label">mantener logeado</label>
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password_confirmation">
                     </div>
+
+                    <div>
+                        @foreach ($roles as $role)
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="role_id"
+                                        value="{{ $role->id }}">
+                                    {{ $role->type }}
+                                </label>
+                            </div>
+                        @endforeach
+                    </div>
+
+
 
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Crear Cuenta</button>
                     </div>
 
                     <div class="my-3">
-                        <span>Ya tienes cuenta? <button x-on:click="showSignUp = false">Inicia sesion</button></span>
+                        <span>Ya tienes cuenta? <button  x-on:click="showSignUp = false">Inicia sesion</button></span>
                     </div>
                 </form>
             </div>

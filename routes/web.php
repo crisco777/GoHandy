@@ -2,8 +2,6 @@
 
 use App\Models\Role;
 use App\Models\User;
-use Illuminate\Support\Facades\Route;
-use League\CommonMark\Extension\Attributes\Node\Attributes;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,7 +1,9 @@
 <?php
 
 use App\Models\Role;
+use App\Models\Town;
 use App\Models\User;
+use App\Models\Sex;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,15 +20,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/login', 'login', [
-    'roles' => Role::all(),
-])->name('login');
+Route::get('login', function () {
+    return view('login', [
+        'roles' => Role::all(),
+    ]);
+});
 
 Route::post('/login', function () {
     $attributes = request()->validate([
         'email' => 'required|email|max:255',
         'password' => 'required|string|max:255'
     ]);
+
     if (Auth::attempt($attributes)) {
         request()->session()->regenerate();
         return redirect('logout');
@@ -42,13 +47,11 @@ Route::post('/login', function () {
     request()->session()->regenerate();
     return redirect('login');
 
-});
+}); */
 
-Route::get('/logout', function () {
-    return view('logout', [
-        'user' => Auth::user(),
-    ]);
-})->middleware('auth');*/
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::post('/signup', function () {
     $attributes = request()->validate([
@@ -65,14 +68,28 @@ Route::post('/signup', function () {
     return redirect('editprofile');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
-
 Route::get('/editprofile', function () {
     return view('editprofile', [
-        'userrole' => Auth::user()->role->type,
+        'userrole' => Role::all(),
+        'sexes' => Sex::all(),
+        'towns' => Town::all(),
     ]);
+});
+
+Route::post('/editprofile', function(){
+    $attributes = request()->validate([
+        'firstname'=> 'required|string|max:255',
+        'lastname'=> 'required|string|max:255',
+        'age'=> 'required|integer|accepted',
+        'contact'=> 'required|integer|unique:users,contact',
+        'sexes_id' => 'required|integer|exists:sex,id',
+        'towns_id'=>'required|integer|exists:town,id',
+        'address'=>'required|string|max:255',
+    ]);
+
+    Auth::user()->update($attributes)->save();
+
+    return redirect('home');
 });
 
 /*
@@ -97,7 +114,8 @@ Route::get('/home', function () {
     }
 });
 */
-Route::post('/userdata', function () {
+
+/*Route::post('/userdata', function () {
     $attributes = request()->validate([
         'email' => 'required|email|max:255|unique:users,email',
         'password' => 'required|string|max:255|confirmed',
@@ -107,4 +125,4 @@ Route::post('/userdata', function () {
     Auth::user()->update($attributes);
 
     return redirect('home');
-});
+});*/

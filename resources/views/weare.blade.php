@@ -64,11 +64,12 @@ section .navbar {
 @endpush
 
 <x-layout>
+
     <header>
         <section id="navbar">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="searchscreen.html">
+              <a class="navbar-brand" href="/home">
                 <i class="bi bi-house-fill fs-1"></i>
               </a>
               <div class="collapse navbar-collapse" id="navbarNav">

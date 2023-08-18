@@ -34,7 +34,7 @@ Route::post('/login', function () {
 
     if (Auth::attempt($attributes)) {
         request()->session()->regenerate();
-        return redirect('logout');
+        return redirect('home');
     }
     return back()->withErrors([
         'email' => 'No account found',
@@ -93,16 +93,6 @@ Route::post('/editprofile', function(){
 });
 
 /*
-Route::post('/role', function () {
-    $attributes = request()->validate([
-        'role_id' => 'required|integer|exists:roles,id'
-    ]);
-
-    Auth::user()->fill($attributes)->save();
-
-    return redirect();
-};
-
     ESTO NO VA AQUI, SE OCUPA EN LA ULTIMA RUTA DONDE SE TERMINA DE LLENAR DATOS
     Auth::user()->finished = true;
     Auth::user()->save();
@@ -114,16 +104,14 @@ Route::get('/home', function () {
     }
 });
 */
-
-/*Route::post('/userdata', function () {
-    $attributes = request()->validate([
-        'email' => 'required|email|max:255|unique:users,email',
-        'password' => 'required|string|max:255|confirmed',
-        'role_id' => 'required|integer|exists:roles,id'
-    ]);
-
-    Auth::user()->update($attributes);
-
-    return redirect('home');
-});*/
 Route::view('weare', 'weare');
+
+Route::view('editprofile1', 'editprofile1');
+
+Route::get('/editprofile1', function () {
+    return view('editprofile1', [
+        'userrole' => Role::all(),
+        'sexes' => Sex::all(),
+        'towns' => Town::all(),
+    ]);
+});

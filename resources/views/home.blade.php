@@ -3,7 +3,7 @@
         <header>
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="nav-link" href="searchscreen.html">
+                    <a class="nav-link" href="/home">
                         <i class="bi bi-house-fill fs-1"></i>
                     </a>
 
@@ -20,9 +20,9 @@
                     </form>
 
 
-                    <a class="nav-link" href="#"
+                    <a class="nav-link" href="/editprofile1"
                         style="color: rgb(5, 114, 187); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
-                        <b> Editar perfil</b>
+                        <b> Ver perfil</b>
                     </a>
                 </div>
             </nav>

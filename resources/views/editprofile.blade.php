@@ -2,35 +2,48 @@
 
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    </head>
-<body>
+<body class="#">
   <div class="wrapper">
     <h2>Registration</h2>
-    <form action="#">
+    <form action="/editprofile" method="POST">
+        @csrf
       <div class="input-box">
-        <input type="firstname" name="firstname" placeholder="Nombre" required>
+        <input type="string" name="firstname" placeholder="Nombre" required>
       </div>
 
       <div class="input-box">
-        <input type="lastname" name="lastname" placeholder="Apellido" required>
+        <input type="string" name="lastname" placeholder="Apellido" required>
       </div>
 
       <div class="input-box">
-        <input type="number" name="age" placeholder="Edad" required>
+        <input type="number" min="0" step="1" name="age" placeholder="Edad" required>
       </div>
 
       <div class="input-box">
         <input type="number" name="contact" placeholder="Numero de contacto" required>
       </div>
 
-      <div class="policy">
-        <input type="checkbox">
-        <h3>I accept all terms & condition</h3>
+      <select class="form-select input-box" name="sex_id">
+        <option selected>Sexo?</option>
+        @foreach ($sexes as $sex)
+            <option value="{{ $sex->id}}">{{$sex->type}}</option>
+        @endforeach
+      </select>
+
+      <select class="form-select input-box" name="town_id">
+        <option selected>De donde eri?</option>
+        @foreach ($towns as $town)
+            <option value="{{ $town->id }}">{{$town->name}}</option>
+        @endforeach
+      </select>
+
+      <div class="input-box">
+        <input type="string" name="address" placeholder="Direccion" required>
       </div>
+
+
       <div class="input-box button">
         <input type="Submit" value="Register Now">
-      </div>
-      <div class="text">
-        <h3>Already have an account? <a href="#">Login now</a></h3>
       </div>
     </form>
   </div>

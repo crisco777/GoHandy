@@ -80,14 +80,14 @@ Route::post('/editprofile', function(){
     $attributes = request()->validate([
         'firstname'=> 'required|string|max:255',
         'lastname'=> 'required|string|max:255',
-        'age'=> 'required|integer|accepted',
+        'age'=> 'required|integer',
         'contact'=> 'required|integer|unique:users,contact',
-        'sexes_id' => 'required|integer|exists:sex,id',
-        'towns_id'=>'required|integer|exists:town,id',
+        'sex_id' => 'required|integer|exists:sexes,id',
+        'town_id'=>'required|integer|exists:towns,id',
         'address'=>'required|string|max:255',
     ]);
 
-    Auth::user()->update($attributes)->save();
+    Auth::user()->update($attributes);
 
     return redirect('home');
 });
@@ -126,3 +126,4 @@ Route::get('/home', function () {
 
     return redirect('home');
 });*/
+Route::view('weare', 'weare');

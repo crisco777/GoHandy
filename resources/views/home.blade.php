@@ -1,43 +1,45 @@
-@push('css')
-    <link rel="stylesheet" href="css/app.css">
-@endpush
-
 <x-layout>
-    <H1>Carpinteros</H1>
+    <body>
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="nav-link" href="searchscreen.html">
+                        <i class="bi bi-house-fill fs-1"></i>
+                    </a>
 
-    <ul class="worker-list">
-        <li class="worker">
-            <h1>Nestor Ayala</h1>
-            <p>Carpintero con dos meses de experiencia responsable
-                en su trabajo y con exelentes recomendaciones un poco loco.
-                Tener cuidado</p>
-            <div class="stars">★★★★☆</div>
-        </li>
-        <li class="worker">
-            <h1>Cristofer Bautista</h1>
-            <div class="stars">★★★★★</div>
-        </li>
-        <li class="worker">
-            <h1>Lia Rodriguez</h1>
-            <div class="stars">★★★★★</div>
-        </li>
-        <li class="worker">
-            <h1>Kimberly Guzman</h1>
-            <div class="stars">★★★★☆</div>
-        </li>
-        <li class="worker">
-            <h1>Brisslie Gonzales</h1>
-            <div class="stars">★★★★★</div>
-        </li>
-        <li class="worker">
-            <h1>Yohana Ruiz</h1>
-            <div class="stars">★☆☆☆☆</div>
-        </li>
-        <li class="worker">
-            <h1>Mauricio chavez</h1>
-            <div class="stars">★★★★★★★</div>
-        </li>
+                    <div class="col-4">
+                        <a class="nav-link" href="/weare"
+                            style="color: rgb(5, 114, 187); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                            <b> ¿Quienes somos?</b>
+                        </a>
+                    </div>
 
-    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </form>
+
+
+                    <a class="nav-link" href="#"
+                        style="color: rgb(5, 114, 187); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                        <b> Editar perfil</b>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            <p class="text-center fs-3" style="font-family:Arial, Helvetica, sans-serif;">¿Buscas algo?</p>
+
+            <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif;">Prueba las siguientes opciones
+            </p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+
+    </body>
 
 </x-layout>
+

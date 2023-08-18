@@ -1,10 +1,12 @@
-@props(['label', 'name', 'type' => 'text'])
+@props(['label', 'name', 'type' => 'text', 'placeholder' => ''])
 
-<div class="mb-3">
+<div>
     <label for="exampleFormControlInput1" class="form-label">{{ $label }}</label>
-    <input type="{{ $type }}" name="{{ $name }}" class="form-control" id="exampleFormControlInput1"
-        placeholder="name@example.com">
-        @error($name)
-            <span class="text-danger fw-bold">{{ $message }}</span>
-        @enderror
+    <input type="{{ $type }}" name="{{ $name }}" value="{{ old($name) }}" class="form-control"
+        placeholder="{{ $placeholder }}">
+    @error($name)
+        <span class="text-danger fw-bold">{{ $message }}</span>
+    @else
+        <span style="user-select: none; color: transparent;">Ofrecisios</span>
+    @enderror
 </div>

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    @if (!Request::is('login', 'editprofile'))
+    @if (!Request::is('login', 'editprofile', 'home', 'weare'))
     <x-nav.navbar/>
     @endif
     {{ $slot }}

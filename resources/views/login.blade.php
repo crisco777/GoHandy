@@ -27,16 +27,13 @@
             <div class="col bg-white p-5 rounded-end transition" x-show="!showSignUp" x-transition:enter-start="opacity-0"
                 x-transition:enter-end="opacity-100" x-transition:leave-start="opacity-100"
                 x-transition:leave-end="opacity-0">
-                <div class="text-end">
-                    <img src="img/logochiquito.jpg" width="48" alt="">
-                </div>
 
                 <h2 class="fw-bold text-center py-5">Bienvenido</h2>
 
 
 
-                <form action="#">
-
+                <form action="/login" method="POST">
+                    @csrf
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" name="email">
@@ -49,42 +46,32 @@
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                     </div>
-
-                    <div class="my-3">
-                        <span>No tienes cuenta? <button x-on:click="showSignUp = true">Registrarme</button></span>
-                    </div>
                 </form>
+
+                <div class="my-3">
+                    <span>No tienes cuenta? <button x-on:click="showSignUp = true">Registrarme</button></span>
+                </div>
             </div>
 
             <div class="col bg-white p-5 rounded-end transition" x-show="showSignUp"
                 x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
                 x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                <div class="text-end">
-                    <img src="img/logochiquito.jpg" width="48" alt="">
-                </div>
-
-                <h2 class="fw-bold text-center py-5">Bienvenida</h2>
 
 
+                <h2 class="fw-bold text-center py-3">Bienvenida</h2>
 
                 <form action="/signup" method="POST">
                     @csrf
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electronico</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password_confirmation">
-                    </div>
+                    <x-input label="Correo Electronico" name="email" type="email"/>
+                    <x-input label="Contraseña" name="password" type="password"/>
+                    <x-input label="Confirmacion Contraseña" name="password_confirmation" type="password"/>
 
-                    <div>
+                    <span>¿Qué quieres hacer?</span>
+                    <br>
+                    <br>
+                    <div class="d-flex flex-row mb-3">
                         @foreach ($roles as $role)
-                            <div class="form-check">
+                            <div class="form-check col-6">
                                 <label class="form-check-label">
                                     <input class="form-check-input" type="radio" name="role_id"
                                         value="{{ $role->id }}">
@@ -94,16 +81,14 @@
                         @endforeach
                     </div>
 
-
-
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Crear Cuenta</button>
                     </div>
-
-                    <div class="my-3">
-                        <span>Ya tienes cuenta? <button  x-on:click="showSignUp = false">Inicia sesion</button></span>
-                    </div>
                 </form>
+
+                <div class="my-3">
+                    <span>Ya tienes cuenta? <button x-on:click="showSignUp = false">Inicia sesion</button></span>
+                </div>
             </div>
         </div>
     </div>

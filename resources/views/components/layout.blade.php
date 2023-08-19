@@ -9,6 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+          rel="stylesheet"
+        />
     <script src="//unpkg.com/alpinejs" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +22,7 @@
 </head>
 
 <body>
-    @if (!Request::is('login', 'editprofile', 'home', 'weare'))
+    @if (!Request::is('login', 'editprofile', 'home', 'weare','viewprofile'))
     <x-nav.navbar/>
     @endif
     {{ $slot }}

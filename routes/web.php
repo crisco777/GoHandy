@@ -106,12 +106,6 @@ Route::get('/home', function () {
 */
 Route::view('weare', 'weare');
 
-Route::view('editprofile1', 'editprofile1');
+Route::view('viewprofile', 'viewprofile');
 
-Route::get('/editprofile1', function () {
-    return view('editprofile1', [
-        'userrole' => Role::all(),
-        'sexes' => Sex::all(),
-        'towns' => Town::all(),
-    ]);
-});
+

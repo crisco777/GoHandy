@@ -11,7 +11,7 @@
             @endguest
 
             @auth
-            <x-nav.navlink label="Dashboard" href="/home"/>
+            <x-nav.navlink label="Home" href="/home"/>
 
             <li class="nav-item">
                 <form action="/logout" method="POST">

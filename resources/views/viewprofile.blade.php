@@ -1,4 +1,5 @@
 <x-layout>
+    @push('css')
     <style>
         .background {
             background-color: rgb(255, 255, 255);
@@ -23,6 +24,8 @@
             font-size: 20px;
         }
     </style>
+       @endpush
+
     <div class="body">
         <div class="container align-items-center justify-content-center">
 
@@ -38,8 +41,8 @@
                     <ul>
                         <form action="updateprofile" method="post" class="">
                             @csrf
-                            <x-input label="First Name" name="firstName" :value="$user->firstname" />
-                            <x-input label="Last Name" name="lastName" :value="$user->lastname" />
+                            <x-input label="First Name" name="firstname" :value="$user->firstname" />
+                            <x-input label="Last Name" name="lastname" :value="$user->lastname" />
                             <x-input label="Email" name="email" :value="$user->email" />
                             <x-input label="Age" name="age" :value="$user->age" />
                             <div class="input-group mb-3">

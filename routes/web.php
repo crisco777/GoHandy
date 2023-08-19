@@ -108,4 +108,5 @@ Route::view('weare', 'weare');
 
 Route::view('viewprofile', 'viewprofile');
 
+Route::view('carpenter', 'carpenter');
 

@@ -4,6 +4,51 @@
             body {
                 background: linear-gradient(to right, #4682a9, #2265b1);
             }
+
+            .raise:hover,
+            .raise:focus {
+                box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                -webkit-transform: translateY(-0.25em);
+                transform: translateY(-0.25em);
+            }
+
+            .raise {
+                --color: #2c74b3;
+                --hover: #91c8e4;
+            }
+
+            button {
+                color: var(--color);
+                -webkit-transition: 0.25s;
+                transition: 0.25s;
+            }
+
+            button:hover,
+            button:focus {
+                border-color: var(--hover);
+                color: #2c74b3;
+            }
+
+            button {
+                background: none;
+                border: 2px solid;
+                font: inherit;
+                line-height: 1;
+                margin: 0.5em;
+                padding: 1em 2em;
+                width: 50%;
+                left: 50%;
+
+            }
+
+            h1 {
+                font-weight: 400;
+            }
+
+            code {
+                color: #2c74b3;
+                font: inherit;
+            }
         </style>
     @endpush
 
@@ -34,56 +79,22 @@
             <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">Prueba las
                 siguientes opciones
             </p>
-            <div class="d-grid gap-2 col-6 mx-auto"
-                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Carpintero</button>
 
-                <button class="btn btn-" onclick="location.href = '/carpenter';" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Fontanero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Electricista</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Mecanico</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Sastrero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Soldador</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Cerrajero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Albañil</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Vidriero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Pintor</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Ordenanza</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Tecnico</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Jardinero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Cocinero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Mantenimiento</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Conductor</button>
-
+            <div class="buttons">
+                <button class="raise"> Jardinería</button>
+                <button class="raise"> Fontanería</button>
+                <button class="raise"> Electricidad</button>
+                <button class="raise"> Mecanica</button>
+                <button class="raise"> Sastrería</button>
+                <button class="raise"> Soldador</button>
+                <button class="raise"> Cerrajería</button>
+                <button class="raise"> Albañilería</button>
+                <button class="raise"> Vidriería</button>
+                <button class="raise"> Pintura</button>
+                <button class="raise"> Ordenanza</button>
+                <button class="raise"> Tecnico</button>
+                <button class="raise"> Cocina</button>
+                <button class="raise"> Mantenimiento</button>
             </div>
         </div>
 

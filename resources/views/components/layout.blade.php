@@ -22,7 +22,11 @@
 </head>
 
 <body>
+<<<<<<< Updated upstream
     @if (!Request::is('login', 'editprofile', 'home', 'weare','viewprofile', 'carpenter'))
+=======
+    @if (!Request::is('login', 'profcomplete', 'home', 'weare','viewprofile'))
+>>>>>>> Stashed changes
     <x-nav.navbar/>
     @endif
     {{ $slot }}

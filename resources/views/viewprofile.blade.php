@@ -1,75 +1,62 @@
 <x-layout>
-@push('css')
-<style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(to bottom, #176bb7, #3b3f58, #494961);
-    }
+    <style>
+        .background {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            border: 10px;
+        }
 
-    .profile-card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 950px;
-      height: 500px;
-      text-align: center;
-    }
+        .format,
+        .format2,
+        .format3 {
+            list-style: none;
+        }
 
-    .profile-picture {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto 10px;
-      background-color: #ccc;
-      overflow: hidden;
-    }
+        .format li,
+        .format2 li,
+        .format3 li {
+            display: inline-block;
+            margin: 5px;
+            padding: 2px;
+            font-size: 20px;
+        }
+    </style>
+    <div class="body">
+        <div class="container align-items-center justify-content-center">
 
-    .profile-picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+            <div class="row justify-content-between">
+                <div class="col row align-self-center justify-content-center">
+                    <h4 style="color:rgb(9, 53, 104)" class="col row align-self-center justify-content-center">INFORMATION
+                    </h4>
+                    <img src="{{ asset('imgprofile/vegeta.jpg') }}" alt="" srcset="" class="rounded-circle">
+                    <br>
+                </div>
+                <div class="format col-8">
+                    <br>
+                    <ul>
+                        <form action="updateprofile" method="post" class="">
+                            @csrf
+                            <x-input label="First Name" name="firstName" :value="$user->firstname" />
+                            <x-input label="Last Name" name="lastName" :value="$user->lastname" />
+                            <x-input label="Email" name="email" :value="$user->email" />
+                            <x-input label="Age" name="age" :value="$user->age" />
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01">Select Image</label>
+                                <input type="file" class="form-control" id="inputGroupFile01" name='img'>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Save Changes</button>
+                        </form>
+                        <!--agregar el x-input de rol-->
 
-    .profile-name {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+                    </ul>
+                </div>
 
-    .profile-title {
-      font-size: 16px;
-      color: #777;
-    }
 
-    .profile-contact {
-      margin-top: 20px;
-    }
+            </div>
 
-    .contact-icon {
-      font-size: 24px;
-      margin-right: 10px;
-      color: #333;
-    }
-  </style>
-  @endpush
-  <body>
-  <div class="profile-card">
-    <div class="profile-picture">
-      <img src="d" alt="Profile Picture">
+        </div>
     </div>
-    <div class="profile-name">John Doe</div>
-    <div class="profile-title">Web Developer</div>
-    <div class="profile-contact">
-      <span class="contact-icon">&#9742;</span> (123) 456-7890
-      <br>
-      <span class="contact-icon">&#9993;</span> john.doe@example.com
-    </div>
-  </div>
-  </body>
+    <br>
 </x-layout>

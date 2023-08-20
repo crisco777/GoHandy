@@ -4,6 +4,7 @@ use App\Models\Role;
 use App\Models\Town;
 use App\Models\User;
 use App\Models\Sex;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -111,3 +112,6 @@ Route::get('viewprofile', function () {
         'user' => Auth::user(),
     ]);
 })->name('profile');
+
+Route::view('carpenter', 'carpenter');
+

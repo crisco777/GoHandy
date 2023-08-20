@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #91c8e4;
+    background-color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -67,27 +67,27 @@ section .navbar {
 
     <header>
         <section id="navbar">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/home">
-                <i class="bi bi-house-fill fs-1"></i>
-              </a>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" id="mision.nav" href="#mision">Misión</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="vision.nav" href="#vision">Visión</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="valores.n" href="#valores">Valores</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </section>
+            <nav class="navbar bg-body-tertiary" style="background: linear-gradient(to right, #91c8e4, #91c8e4)">
+                <a class="nav-link" href="/home">
+                    <i class="bi bi-house-fill fs-1"></i>
+                </a>
+                <a class="nav-link d-flex justify-content-start" href="/weare"
+                    style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                    <b> ¿Quienes somos?</b>
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+                <a class="nav-link" href="/viewprofile"
+                    style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                    <b> Ver perfil</b>
+                </a>
+                <a class="nav-link" href="/login"
+                style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                <b>Logout</b>
+            </a>
+            </nav>
 
         <section class="text-header" style="color: antiquewhite;">
           <h2><b> Nosotros somos</b></h2>

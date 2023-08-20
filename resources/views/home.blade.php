@@ -2,7 +2,7 @@
     @push('css')
         <style>
             body {
-                background: linear-gradient(to right, #4682a9, #2265b1);
+                background: linear-gradient(to right, #ffffff, #ffffff);
             }
 
             .raise:hover,
@@ -53,12 +53,12 @@
     @endpush
 
     <body>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary" style="background: linear-gradient(to right, #91c8e4, #91c8e4)">
             <a class="nav-link" href="/home">
                 <i class="bi bi-house-fill fs-1"></i>
             </a>
             <a class="nav-link d-flex justify-content-start" href="/weare"
-                style="color: rgb(5, 114, 187); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
                 <b> ¿Quienes somos?</b>
             </a>
             <form class="d-flex" role="search">
@@ -66,35 +66,73 @@
                 <button class="btn btn-primary" type="submit">Buscar</button>
             </form>
             <a class="nav-link" href="/viewprofile"
-                style="color: rgb(5, 114, 187); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
                 <b> Ver perfil</b>
             </a>
+            <a class="nav-link" href="/login"
+            style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+            <b>Logout</b>
+        </a>
         </nav>
 
         <div>
-            <p class="text-center fs-3" style="font-family:Arial, Helvetica, sans-serif; color: aliceblue;">¿Buscas
+            <p class="text-center fs-3" style="font-family:Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">¿Buscas
                 algo?
             </p>
 
-            <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">Prueba las
+            <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Prueba las
                 siguientes opciones
             </p>
+            <div class="d-grid gap-2 col-6 mx-auto"
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Carpintero</button>
 
-            <div class="buttons">
-                <button class="raise"> Jardinería</button>
-                <button class="raise"> Fontanería</button>
-                <button class="raise"> Electricidad</button>
-                <button class="raise"> Mecanica</button>
-                <button class="raise"> Sastrería</button>
-                <button class="raise"> Soldador</button>
-                <button class="raise"> Cerrajería</button>
-                <button class="raise"> Albañilería</button>
-                <button class="raise"> Vidriería</button>
-                <button class="raise"> Pintura</button>
-                <button class="raise"> Ordenanza</button>
-                <button class="raise"> Tecnico</button>
-                <button class="raise"> Cocina</button>
-                <button class="raise"> Mantenimiento</button>
+                <button class="btn btn-" onclick="location.href = '/carpenter';" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Fontanero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Electricista</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Mecanico</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Sastrero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Soldador</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Cerrajero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Albañil</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Vidriero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Pintor</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Ordenanza</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Tecnico</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Jardinero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Cocinero</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Mantenimiento</button>
+
+                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
+                    type="button">Conductor</button>
+
             </div>
         </div>
 

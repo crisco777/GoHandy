@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    @if (!Request::is('login', 'editprofile', 'home', 'weare','viewprofile'))
+    @if (!Request::is('login', 'editprofile', 'home', 'weare','viewprofile', 'carpenter'))
     <x-nav.navbar/>
     @endif
     {{ $slot }}

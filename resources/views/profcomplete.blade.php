@@ -5,7 +5,7 @@
 <body class="#">
   <div class="wrapper">
     <h2>Registration</h2>
-    <form action="/editprofile" method="POST">
+    <form action="/profcomplete" method="POST">
         @csrf
       <div class="input-box">
         <input type="string" name="firstname" placeholder="Nombre" required>

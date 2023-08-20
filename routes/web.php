@@ -4,6 +4,7 @@ use App\Models\Role;
 use App\Models\Town;
 use App\Models\User;
 use App\Models\Sex;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,18 +66,18 @@ Route::post('/signup', function () {
     Auth::login($user);
     request()->session()->regenerate();
 
-    return redirect('editprofile');
+    return redirect('profcomplete');
 });
 
-Route::get('/editprofile', function () {
-    return view('editprofile', [
+Route::get('profcomplete', function () {
+    return view('profcomplete', [
         'userrole' => Role::all(),
         'sexes' => Sex::all(),
         'towns' => Town::all(),
     ]);
 });
 
-Route::post('/editprofile', function(){
+Route::post('/profcomplete', function(){
     $attributes = request()->validate([
         'firstname'=> 'required|string|max:255',
         'lastname'=> 'required|string|max:255',
@@ -106,7 +107,11 @@ Route::get('/home', function () {
 */
 Route::view('weare', 'weare');
 
-Route::view('viewprofile', 'viewprofile');
+Route::get('viewprofile', function () {
+    return view('viewprofile', [
+        'user' => Auth::user(),
+    ]);
+})->name('profile');
 
 Route::view('carpenter', 'carpenter');
 

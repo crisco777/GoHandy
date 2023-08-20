@@ -1,8 +1,7 @@
 @push('css')
     <style>
         body {
-            background: #0a2647;
-            background: linear-gradient(to right, #4682a9, #0a2647);
+            background: linear-gradient(to right, #67b6dd, #0597e0);
         }
 
 

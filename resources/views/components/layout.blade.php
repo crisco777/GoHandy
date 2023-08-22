@@ -23,7 +23,7 @@
 
 <body>
 
-    @if (!Request::is('login', 'profcomplete', 'home', 'weare','viewprofile', 'carpenter'))
+    @if (!Request::is('login', 'profcomplete'))
     <x-nav.navbar/>
     @endif
     {{ $slot }}

@@ -1,28 +1,32 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+<nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #91c8e4, #91c8e4)">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            @guest
-                <x-nav.navlink label="Login" href="/login"/>
-            @endguest
+        <a class="navbar-brand" href="home">
+            <i class="bi bi-house-fill text-white fs-1"></i>
+            GoHandy
+        </a>
 
-            @auth
-            <x-nav.navlink label="Home" href="/home"/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <li class="nav-item">
-                <form action="/logout" method="POST">
-                    @csrf
-                    <div class="col-auto">
-                        <button type="submit" class="nav-link">Login</button>
-                    </div>
-                </form>
-            </li>
-            @endauth
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white fs-5 fw-bold" aria-current="page" href="weare">¿Quienes
+                        somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white fs-5 fw-bold" aria-current="page" href="viewprofile">
+                        Ver perfil</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active text-white fs-5 fw-bold" aria-current="page" href="viewprofile">
+                        Ver perfil</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>

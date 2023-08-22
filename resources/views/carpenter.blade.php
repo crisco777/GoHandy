@@ -109,6 +109,9 @@ section{
 .section-title p{
     margin-top: 20px;
 }
+.center-img{
+    text-align: center
+}
 
 </style>
 @endpush
@@ -144,10 +147,10 @@ section{
 
             <div class="row"></div>
             <!--team member 1-->
-            <div class="col-lg-6 mt-4">
+            <div class="col-lg-6 mt-4 ">
                 <div class="member d-flex align-items-start">
                     <div class="teampic">
-                        <img src="img/profile.png" class="img-fluid" alt="team1">
+                        <img src="{{ asset('imgprofile/vegeta.jpg') }}" class="img-fluid" alt="team1">
                     </div>
                     <div class="member-info">
                         <h4>Ricardo Bautista</h4>

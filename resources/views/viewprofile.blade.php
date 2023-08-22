@@ -72,7 +72,7 @@
                             </div>
                             <button type="submit" class="btn btn-danger">Save Changes</button>
                         </form>
-                        <!--agregar el x-input de rol-->
+
 
                     </ul>
                 </div>

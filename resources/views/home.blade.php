@@ -2,53 +2,53 @@
     @push('css')
         <style>
             body {
-                background: linear-gradient(to right, #ffffff, #ffffff);
+                background: linear-gradient(to right, #ffffff, #ffff     ff);
             }
 
-            .raise:hover,
-            .raise:focus {
-                box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-                -webkit-transform: translateY(-0.25em);
-                transform: translateY(-0.25em);
-            }
+                .raise:hover,
+                .raise:focus {
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                    -webkit-transform: translateY(-0.25em);
+                    transform: translateY(-0.25em);
+                }
 
-            .raise {
-                --color: #2c74b3;
-                --hover: #91c8e4;
-            }
+                .raise {
+                    --color: #2c74b3;
+                    --hover: #91c8e4;
+                }
 
-            button {
-                color: var(--color);
-                -webkit-transition: 0.25s;
-                transition: 0.25s;
-            }
+                button {
+                    color: var(--color);
+                    -webkit-transition: 0.25s;
+                    transition: 0.25s;
+                }
 
-            button:hover,
-            button:focus {
-                border-color: var(--hover);
-                color: #2c74b3;
-            }
+                button:hover,
+                button:focus {
+                    border-color: var(--hover);
+                    color: #2c74b3;
+                }
 
-            button {
-                background: none;
-                border: 2px solid;
-                font: inherit;
-                line-height: 1;
-                margin: 0.5em;
-                padding: 1em 2em;
-                width: 50%;
-                left: 50%;
+                button {
+                    background: none;
+                    border: 2px solid;
+                    font: inherit;
+                    line-height: 1;
+                    margin: 0.5em;
+                    padding: 1em 2em;
+                    width: 50%;
+                    left: 50%;
+                }
 
-            }
+                h1 {
+                    font-weight: 400;
+                }
 
-            h1 {
-                font-weight: 400;
-            }
+                code {
+                    color: #2c74b3;
+                    font: inherit;
+                }
 
-            code {
-                color: #2c74b3;
-                font: inherit;
-            }
         </style>
     @endpush
 
@@ -70,9 +70,9 @@
                 <b> Ver perfil</b>
             </a>
             <a class="nav-link" href="/login"
-            style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
-            <b>Logout</b>
-        </a>
+                style="color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:large;">
+                <b>Logout</b>
+            </a>
         </nav>
 
         <div>
@@ -80,67 +80,30 @@
                 algo?
             </p>
 
-            <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Prueba las
+            <p class="text-center fs-4" style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Prueba
+                las
                 siguientes opciones
             </p>
-            <div class="d-grid gap-2 col-6 mx-auto"
-                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Carpintero</button>
-
-                <button class="btn btn-" onclick="location.href = '/carpenter';" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Fontanero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Electricista</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Mecanico</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Sastrero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Soldador</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Cerrajero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Albañil</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Vidriero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Pintor</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Ordenanza</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Tecnico</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Jardinero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Cocinero</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Mantenimiento</button>
-
-                <button class="btn btn-" style="background-color: #0a2647; color: aliceblue;"
-                    type="button">Conductor</button>
-
+            <div class="buttons" style="text-align: center">
+                    <button class="raise" onclick="location.href = '/carpenter';"> Carpinteria</button>
+                    <button class="raise"> Jardinería</button>
+                    <button class="raise"> Electricidad</button>
+                    <button class="raise"> Mecanica</button>
+                    <button class="raise"> Sastrería</button>
+                    <button class="raise"> Soldador</button>
+                    <button class="raise"> Cerrajería</button>
+                    <button class="raise"> Albañilería</button>
+                    <button class="raise"> Vidriería</button>
+                    <button class="raise"> Pintura</button>
+                    <button class="raise"> Ordenanza</button>
+                    <button class="raise"> Tecnico</button>
+                    <button class="raise"> Cocina</button>
+                    <button class="raise"> Mantenimiento</button>
+                    <button class="raise"> Fontanería</button>
             </div>
-        </div>
 
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-        </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+            </script>
     </body>
 </x-layout>

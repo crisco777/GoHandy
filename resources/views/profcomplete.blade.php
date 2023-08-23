@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    </head>
-<body class="#">
+< class="#">
   <div class="wrapper">
     <h2>Registration</h2>
     <form action="/profcomplete" method="POST">
@@ -41,30 +41,22 @@
         <input type="string" name="address" placeholder="Direccion" required>
       </div>
 
+      @if ($userrole == 1)
+      <div class="input-box">
+          <input type="string" name="description" placeholder="Dinos un poco acerca de tí" required>
+        </div>
 
+        <select class="form-select input-box" name="service_id">
+            <option selected>Qué servicios te interesa ofrecer</option>
+            @foreach ($services as $service)
+                <option value="{{ $service->id }}">{{$service->type}}</option>
+            @endforeach
+          </select>
+
+        @endif
       <div class="input-box button">
         <input type="Submit" value="Register Now">
       </div>
     </form>
   </div>
-</body>
-</html>
-    <!--<form action="/userdata" method="POST">
-        @csrf
-
-        <x-input label="Id sexo" name="sex_id" type="sex_id"/>
-        <x-input label="Id municipio" name="town_id" type="town_id"/>
-        <x-input label="Dirección" name="address" type="address"/>
-
-
-        @if ($userrole == 'Workergsgt')
-        <x-input label="Edad1231321" name="age" type="age"/>
-        @else
-        <x-input label="Edad de cliente " name="age" type="age"/>
-        <x-input label="L el que chambea " name="age" type="age"/>
-        @endif
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Login</button>
-        </div>
-    </form> -->
 </x-layout>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Role;
+use App\Models\Service;
 use App\Models\Town;
 use App\Models\User;
 use App\Models\Sex;
@@ -71,9 +72,10 @@ Route::post('/signup', function () {
 
 Route::get('profcomplete', function () {
     return view('profcomplete', [
-        'userrole' => Role::all(),
+        'userrole' => Auth::user()->role_id,
         'sexes' => Sex::all(),
         'towns' => Town::all(),
+        'services'=> Service::all(),
     ]);
 });
 
@@ -86,6 +88,7 @@ Route::post('/profcomplete', function(){
         'sex_id' => 'required|integer|exists:sexes,id',
         'town_id'=>'required|integer|exists:towns,id',
         'address'=>'required|string|max:255',
+        'service_id'=>'required|integer|exists:services,id',
     ]);
 
     Auth::user()->update($attributes);

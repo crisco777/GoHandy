@@ -23,7 +23,7 @@
                         Ver perfil</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link active text-white fs-5 fw-bold" aria-current="page" href="home">
+                    <a class="nav-link active text-white fs-5 fw-bold" aria-current="page" href="login">
                         Cerrar Sesión</a>
                 </li>
             </ul>

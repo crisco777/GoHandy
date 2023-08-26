@@ -2,53 +2,52 @@
     @push('css')
         <style>
             body {
-                background: linear-gradient(to right, #ffffff, #ffff     ff);
+                background: linear-gradient(to right, #ffffff, #ffff ff);
             }
 
-                .raise:hover,
-                .raise:focus {
-                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-                    -webkit-transform: translateY(-0.25em);
-                    transform: translateY(-0.25em);
-                }
+            .raise:hover,
+            .raise:focus {
+                box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                -webkit-transform: translateY(-0.25em);
+                transform: translateY(-0.25em);
+            }
 
-                .raise {
-                    --color: #2c74b3;
-                    --hover: #91c8e4;
-                }
+            .raise {
+                --color: #2c74b3;
+                --hover: #91c8e4;
+            }
 
-                button {
-                    color: var(--color);
-                    -webkit-transition: 0.25s;
-                    transition: 0.25s;
-                }
+            button {
+                color: var(--color);
+                -webkit-transition: 0.25s;
+                transition: 0.25s;
+            }
 
-                button:hover,
-                button:focus {
-                    border-color: var(--hover);
-                    color: #2c74b3;
-                }
+            button:hover,
+            button:focus {
+                border-color: var(--hover);
+                color: #2c74b3;
+            }
 
-                button {
-                    background: none;
-                    border: 2px solid;
-                    font: inherit;
-                    line-height: 1;
-                    margin: 0.5em;
-                    padding: 1em 2em;
-                    width: 50%;
-                    left: 50%;
-                }
+            button {
+                background: none;
+                border: 2px solid;
+                font: inherit;
+                line-height: 1;
+                margin: 0.5em;
+                padding: 1em 2em;
+                width: 50%;
+                left: 50%;
+            }
 
-                h1 {
-                    font-weight: 400;
-                }
+            h1 {
+                font-weight: 400;
+            }
 
-                code {
-                    color: #2c74b3;
-                    font: inherit;
-                }
-
+            code {
+                color: #2c74b3;
+                font: inherit;
+            }
         </style>
     @endpush
 
@@ -65,21 +64,11 @@
                 siguientes opciones
             </p>
             <div class="buttons" style="text-align: center">
-                    <button class="raise" onclick="location.href = '/carpenter';"> Carpinteria</button>
-                    <button class="raise"> Jardinería</button>
-                    <button class="raise"> Electricidad</button>
-                    <button class="raise"> Mecanica</button>
-                    <button class="raise"> Sastrería</button>
-                    <button class="raise"> Soldador</button>
-                    <button class="raise"> Cerrajería</button>
-                    <button class="raise"> Albañilería</button>
-                    <button class="raise"> Vidriería</button>
-                    <button class="raise"> Pintura</button>
-                    <button class="raise"> Ordenanza</button>
-                    <button class="raise"> Tecnico</button>
-                    <button class="raise"> Cocina</button>
-                    <button class="raise"> Mantenimiento</button>
-                    <button class="raise"> Fontanería</button>
+                @foreach ($services as $service)
+                <a href="{{ route('services.index', ['service' => $service->type]) }}">
+                    <button class="raise">{{ $service->type }}</button>
+                </a>
+                @endforeach
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

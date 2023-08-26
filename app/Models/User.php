@@ -64,9 +64,9 @@ class User extends Authenticatable
     { return $this->belongsToMany(Work::class);
     }
 
-    public function service()
+    public function services()
     {
-        return $this->belongsToMany(Evaluation::class);
+        return $this->belongsToMany(Service::class);
     }
 
     public function setPasswordAttribute($password)

@@ -52,8 +52,10 @@ Route::post('/login', function () {
 }); */
 
 Route::get('/home', function () {
-    return view('home');
-});
+    return view('home', [
+        'services' => Service::all()
+    ]);
+})->name('home');
 
 Route::post('/signup', function () {
     $attributes = request()->validate([
@@ -88,7 +90,6 @@ Route::post('/profcomplete', function(){
         'sex_id' => 'required|integer|exists:sexes,id',
         'town_id'=>'required|integer|exists:towns,id',
         'address'=>'required|string|max:255',
-        'service_id'=>'required|integer|exists:services,id',
     ]);
 
     Auth::user()->update($attributes);
@@ -116,5 +117,15 @@ Route::get('viewprofile', function () {
     ]);
 })->name('profile');
 
-Route::view('carpenter', 'carpenter');
+Route::get('services/{service:type}', function (Service $service) {
+    return view('serviceUsers', [
+        'service' => $service->type,
+        'users' => User::whereRelation('role', 'type', 'Worker')->whereRelation('services', 'id', $service->id)->get()
+    ]);
+})->name('services.index');
 
+Route::get('profile/{user}', function (User $user) {
+    return view('profile', [
+        'user' => $user
+    ]);
+})->name('services.profile');

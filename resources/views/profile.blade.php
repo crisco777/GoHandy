@@ -8,7 +8,6 @@
         </div>
 
         <form action="updateprofile" method="post" class="">
-            @csrf
 
             <p class="mb-1">Firstname</p>
             <input  name="firstname" class="form-control" :value="$user->firstname" value={{Auth::user()->firstname}} />

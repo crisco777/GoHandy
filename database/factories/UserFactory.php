@@ -20,9 +20,9 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        $sexes = Sex::all()->pluck('id');
-        $roles = Role::all()->pluck('id');
-        $towns = Town::all()->pluck('id');
+        $sexes = Sex::pluck('id');
+        $roles = Role::pluck('id');
+        $towns = Town::pluck('id');
 
 
         return [

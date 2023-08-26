@@ -23,10 +23,12 @@
 
 <body>
 
-    @if (!Request::is('login', 'profcomplete'))
+    @if (!Request::is('login', 'profcomplete','hired'))
     <x-nav.navbar/>
     @endif
-    {{ $slot }}
+    <div style="padding-top: 74px">
+        {{ $slot }}
+    </div>
     @stack('js')
 </body>
 

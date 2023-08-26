@@ -2,7 +2,6 @@
 
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    </head>
-< class="#">
   <div class="wrapper">
     <h2>Registration</h2>
     <form action="/profcomplete" method="POST">
@@ -24,14 +23,14 @@
       </div>
 
       <select class="form-select input-box" name="sex_id">
-        <option selected>Sexo?</option>
+        <option selected>Sexo</option>
         @foreach ($sexes as $sex)
             <option value="{{ $sex->id}}">{{$sex->type}}</option>
         @endforeach
       </select>
 
       <select class="form-select input-box" name="town_id">
-        <option selected>De donde eri?</option>
+        <option selected>Elije tu municipio</option>
         @foreach ($towns as $town)
             <option value="{{ $town->id }}">{{$town->name}}</option>
         @endforeach
@@ -54,9 +53,9 @@
           </select>
 
         @endif
+        
       <div class="input-box button">
         <input type="Submit" value="Register Now">
       </div>
     </form>
-  </div>
 </x-layout>

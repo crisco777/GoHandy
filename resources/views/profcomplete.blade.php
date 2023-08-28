@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    </head>
-  <div class="wrapper">
+  <div class="wrapper" style="width: 100vh;">
     <h2>Registration</h2>
     <form action="/profcomplete" method="POST">
         @csrf
@@ -53,7 +53,7 @@
           </select>
 
         @endif
-        
+
       <div class="input-box button">
         <input type="Submit" value="Register Now">
       </div>

@@ -2,7 +2,7 @@
     @push('css')
         <style>
             body {
-                background: linear-gradient(to right, #ffffff, #ffff ff);
+
             }
 
             .raise:hover,
@@ -52,8 +52,6 @@
     @endpush
 
     <body>
-
-
         <div>
             <p class="text-center fs-3" style="font-family:Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">¿Buscas
                 algo?

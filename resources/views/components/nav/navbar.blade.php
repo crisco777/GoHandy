@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(to right, #91c8e4, #91c8e4)">
+<nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(to right, #4682a9, #4682a9)">
     <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="{{ route('home') }}">
             <i class="bi bi-house-fill text-dark fs-2"></i>

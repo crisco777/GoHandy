@@ -20,8 +20,8 @@
     <div class="container  rounded w-75" x-data="{ showSignUp: false }">
         <div class="row align-items-stretch justify-content-center align-items-center"
             style="height: 80vh; width:150vh; background-color:white ">
-            <div class="col-6 " style="margin-top: 10vh; ">
-                <img src="img/logo.jpg" alt="" style="width:75vh">
+            <div class="col-6" style="margin-top: 18vh;">
+                <img src="img/logo 2.png" alt="" style="width:75vh">
             </div>
             <div class="col bg-white p-5 rounded-end transition" x-show="!showSignUp"
                 x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -33,11 +33,11 @@
 
                 <form action="/login" method="POST">
                     @csrf
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="email" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" name="email">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="password">
                     </div>
@@ -62,18 +62,10 @@
 
                 <form action="/signup" method="POST">
                     @csrf
-                    <label for="email" class="form-label">Correo electronico</label>
-
                     <input class="form-control mb-3" placeholder="Email" label="Correo Electronico" name="email"
                         type="email" />
-
-                    <label for="password" class="form-label">Contraseña</label>
-
                     <input class="form-control mb-3" placeholder="Password" label="Contraseña" name="password"
                         type="password" />
-
-                    <label for="password" class="form-label">Confirmar contraseña</label>
-
                     <input class="form-control mb-3" placeholder="Confirm password" label="Confirmacion Contraseña"
                         name="password_confirmation" type="password" />
 

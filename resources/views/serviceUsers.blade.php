@@ -21,6 +21,7 @@
                 box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
                 border-radius: 5px;
                 background: #fff;
+                border: #130458
             }
 
             .team .member .teampic {
@@ -51,85 +52,13 @@
                 content: "";
                 position: absolute;
                 display: block;
-                width: 50px;
+                width: 415px;
                 height: 2px;
                 background: black;
                 bottom: 0;
                 left: 0;
             }
 
-            .team .memberp {
-                margin: 10px 0 0 0;
-                font-size: 14px;
-            }
-
-            .team .member .social {
-                margin-top: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
-            .team .member .social a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 32px;
-                height: #eff2f8;
-            }
-
-            .team .member .social a i {
-                color: red;
-                font-size: 16px;
-                margin: 0 2px;
-            }
-
-            .team .member .social a:hover {
-                background: red;
-            }
-
-            .team .member .social a:hover i {
-                background: white;
-            }
-
-            .team .member .social a+a {
-                margin-left: 8px;
-            }
-
-            section {
-                padding: 60px 0;
-                overflow: hidden;
-            }
-
-            .section-title {
-                text-align: center;
-                padding-bottom: 30px;
-            }
-
-            .underline {
-                width: 150px;
-                height: 1px;
-                background-color: black;
-                margin: auto;
-                margin-top: -30px;
-            }
-
-            .section-title h2 {
-                font-size: 32px;
-                font-weight: bold;
-                margin-bottom: 20px;
-                padding-bottom: 20px;
-                position: relative;
-                color: rgb(255, 255, 255);
-            }
-
-            .section-title p {
-                margin-top: 20px;
-            }
-
-            .center-img {
-                text-align: center
-            }
         </style>
     @endpush
 

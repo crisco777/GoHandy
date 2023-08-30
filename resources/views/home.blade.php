@@ -1,9 +1,7 @@
 <x-layout>
     @push('css')
         <style>
-            body {
-
-            }
+            body {}
 
             .raise:hover,
             .raise:focus {
@@ -51,7 +49,6 @@
         </style>
     @endpush
 
-    <body>
         <div>
             <p class="text-center fs-3" style="font-family:Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">¿Buscas
                 algo?
@@ -61,16 +58,24 @@
                 las
                 siguientes opciones
             </p>
-            <div class="buttons" style="text-align: center">
-                @foreach ($services as $service)
-                <a href="{{ route('services.index', ['service' => $service->type]) }}">
-                    <button class="raise">{{ $service->type }}</button>
-                </a>
-                @endforeach
+            <div class="container">
+                <div class="row row-cols-3">
+                    @foreach ($services as $service)
+                        <div class="col">
+                            <a href="{{ route('services.index', ['service' => $service->type]) }}">
+                                <div class="card mb-4">
+                                    <img src="/icons/{{ $service->type }}.png" class="card-img-top mx-auto mt-2 " style="width: 45%">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">{{ $service->type }}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
             </script>
-    </body>
 </x-layout>

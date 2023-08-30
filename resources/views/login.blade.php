@@ -5,9 +5,6 @@
             overflow-y: hidden;
         }
 
-
-
-
         .transition {
             transition: all;
             transition-duration: 300ms;

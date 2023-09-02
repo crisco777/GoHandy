@@ -7,13 +7,16 @@
         }
 
         body {
-            background-color: #ffffff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #ffffff font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center
         }
 
+        main {
+            padding: auto;
+        }
+
         .container {
-            padding: 60px 0;
+            padding: auto;
             width: 90px;
             max-width: 1000px;
             margin: auto;
@@ -21,7 +24,7 @@
         }
 
         .titulo {
-            color: #0a2647;
+            color: #000000;
             font-size: 30px;
             text-align: center;
             margin-top: 30px;
@@ -33,11 +36,30 @@
             height: 600px;
             background: hsla(212, 75%, 16%, 0.685);
             background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
-            background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url(pic2.jpg);
+            background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url();
             background-size: cover;
             background-attachment: fixed;
             position: relative;
 
+        }
+
+        section{
+            height: 650px;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 40px;
+            align-content: center;
+            background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
+        }
+
+        section h2{
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        section h3{
+            position: center;
         }
 
         section .navbar {
@@ -56,6 +78,18 @@
             text-align: center;
         }
 
+        .text-header h2 {
+            font-size: 40px;
+            color: white
+        }
+
+
+        p {
+            padding: 0px 0px 30px 15px;
+            font-family: 'Bevan', serif;
+            font-size: medium;
+        }
+
         .wave {
             position: absolute;
             bottom: 0;
@@ -67,10 +101,10 @@
 <x-layout>
 
     <header>
-        <section class="text-header" style="color: antiquewhite;">
+        <div class="text-header">
             <h2><b> Nosotros somos</b></h2>
-            <h1><b> GoHandy</b></h1>
-        </section>
+            <h2><b> GoHandy</b></h2>
+        </div>
 
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -83,44 +117,55 @@
     <body>
 
         <main>
-            <section class="cont mision" id="mision">
-                <h2 class="titulo"> Misión</h2>
-                <p class="body">To offer a space that provides a wide range of high quality domestic services to meet
-                    the needs of our
-                    customers, providing effective, affordable and reliable solutions.</p>
+            <section class="mivision">
+                <div class="text-container">
+                    <h2 class="titulo"> Misión</h2>
+
+                    <p>To offer a space that provides a wide range of high quality domestic services to<br>
+                        meet the needs of our customers, providing effective, affordable and reliable solutions.</p>
+                </div>
+                <div class="text-container">
+
+                    <h2 class="titulo">Visión</h2>
+                    <p> To be the main online destination for the contracting of services in the country, providing <br>
+                        our users with a reliable, efficient and secure platform that satisfies all their needs.</p>
+                </div>
             </section>
-            <section class="cont vision" id="vision">
-                <h2 class="titulo">Visión</h2>
-                <p class="body"> To be the main online destination for the contracting of services in the country,
-                    providing our
-                    users with a reliable, efficient and secure platform that satisfies all their needs.</p>
+
+            <section class="values">
+                <h3 class="titulo">Valores</h3>
+                <div class="text-container">
+                    <h4> Integrity:</h4>
+                    <p>
+                        Our site seeks to assure its users interested in hiring that the person
+                        with whom <br>
+                        they are establishing contact will provide them with the best quality service, working in an
+                        <br>
+                        honest, conscientious and integrated manner.
+                    </p>
+
+                    <h4> Confidence:</h4>
+                    <p>
+                        Our site works through trust, guaranteeing both our users who are looking
+                        to hire a <br>
+                        service and those who are offering their work. A website built on trust and that seeks to allow
+                        a
+                        <br>
+                        safe environment for all its users.
+                    </p>
+
+
+                    <h4> Commitment:</h4>
+                    <p>
+
+                        To provide users with people who are responsible and committed to offer
+                        and perform <br>
+                        their work in an excellent manner.
+                    </p>
+                </div>
+
             </section>
-            <section class="cont valores" id="valores">
-                <h2 class="titulo">Valores</h2>
-                <p class="body mb-4">
-                    Valores: Integrity: Our site seeks to assure its users interested in hiring that the person with
-                    whom they are establishing contact will provide them with the best quality service, working in an
-                    honest, conscientious and integrated manner.
-                </p >
 
-                <p class="body mb-4">
-                    Confidence: Our site works through trust, guaranteeing both our users who are looking to hire a
-                    service and those who are offering their work. A website built on trust and that seeks to allow a
-                    safe environment for all its users.
-                </p>
-
-                <p class="body mb-4">
-
-                    Honesty: In our website users who offer services and those who require them have the security of
-                    hiring or working with really honest people.
-                </p>
-
-                <p class="body mb-4">
-
-                    Commitment: To provide users with people who are responsible and committed to offer and perform
-                    their work in an excellent manner.
-                </p>
-            </section>
         </main>
 
 

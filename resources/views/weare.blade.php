@@ -121,13 +121,13 @@
                 <div class="text-container">
                     <h2 class="titulo"> Misión</h2>
 
-                    <p>To offer a space that provides a wide range of high quality domestic services to<br>
+                    <p>We want to offer a space that provides a wide range of high quality domestic services to<br>
                         meet the needs of our customers, providing effective, affordable and reliable solutions.</p>
                 </div>
                 <div class="text-container">
 
                     <h2 class="titulo">Visión</h2>
-                    <p> To be the main online destination for the contracting of services in the country, providing <br>
+                    <p> To be the main online platform for hiring domestic services in the country, providing <br>
                         our users with a reliable, efficient and secure platform that satisfies all their needs.</p>
                 </div>
             </section>
@@ -137,11 +137,11 @@
                 <div class="text-container">
                     <h4> Integrity:</h4>
                     <p>
-                        Our site seeks to assure its users interested in hiring that the person
+                        GoHandy seeks to assure its users interested in hiring that the person
                         with whom <br>
                         they are establishing contact will provide them with the best quality service, working in an
                         <br>
-                        honest, conscientious and integrated manner.
+                        honest, conscientious and integral manner.
                     </p>
 
                     <h4> Confidence:</h4>

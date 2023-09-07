@@ -7,14 +7,6 @@
                 box-sizing: border-box;
             }
 
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background: linear-gradient(to right, #ffffff, #ffffff);
-
-            }
-
             .team .member {
                 position: relative;
                 padding: 30px;
@@ -28,10 +20,6 @@
                 overflow: hidden;
                 width: 50px;
                 border-radius: 50%;
-            }
-
-            .team .member .member-info {
-                padding-left: 10px;
             }
 
             .team .member h4 {
@@ -61,6 +49,8 @@
 
         </style>
     @endpush
+
+    
 
     <div class="team">
         <div class="container">

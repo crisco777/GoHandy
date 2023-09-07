@@ -36,10 +36,6 @@
                 left: 50%;
             }
 
-            h1 {
-                font-weight: 400;
-            }
-
             code {
                 color: #2c74b3;
                 font: inherit;

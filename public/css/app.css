@@ -5,7 +5,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Jost' , sans-serif;
     background: linear-gradient(to bottom, #176bb7, #3b3f58, #494961);
 }
 
@@ -117,13 +116,11 @@ body{
     color: gold;
     font-size: 50px;
   }
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 body{
   min-height: 100vh;

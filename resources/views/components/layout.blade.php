@@ -23,14 +23,13 @@
     <style>
         @font-face {
             font-family: 'Gotham';
-            src: url('fonts/Gotham-Thin.otf')
+            src: url({{ asset('fonts/Gotham-Thin.otf') }})
         }
     </style>
 </head>
 
 <body style="font-family: Gotham">
-
-    @if (!Request::is('login', 'profcomplete', 'hired'))
+    @if (!Request::is('login', 'profcomplete', 'hired',))
         <x-nav.navbar />
     @endif
     <div style="padding-top: 74px">

@@ -1,5 +1,6 @@
 @props([ 'user' ])
 
+
 <div class="col mt-4">
     <div class="member d-flex align-items-start h-100">
         <div class="teampic">
@@ -19,7 +20,7 @@
             <span>Dirección:{{$user->address}}</span>
             <p>Número de contacto:{{$user->contact}}</p>
             <a href="{{ route('services.profile', ['user' => $user->id]) }}">
-                <button type="button" class="btn btn-primary">Ver perfil</button>
+                <button style="background-color: #050A30; " type="button" class="btn btn-primary">Ver perfil</button>
             </a>
         </div>
     </div>

@@ -54,7 +54,7 @@
 
         @endif
 
-      <div class="input-box button">
+      <div class="input-box  button">
         <input type="Submit" value="Register Now">
       </div>
     </form>

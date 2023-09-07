@@ -126,6 +126,6 @@ Route::get('services/{service:type}', function (Service $service) {
 
 Route::get('profile/{user}', function (User $user) {
     return view('profile', [
-        'users' => $user
+        'user' => $user
     ]);
 })->name('services.profile');

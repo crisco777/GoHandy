@@ -5,6 +5,9 @@
                 background: hsla(212, 75%, 16%, 0.685);
                 background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
                 background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url();
+                background-image: url(img/grupito.jpeg);
+                height: 700px;
+                w
             }
 
             .bg-color {
@@ -16,6 +19,7 @@
                 bottom: 0;
                 width: 100%;
             }
+
         </style>
     @endpush
 
@@ -23,6 +27,8 @@
         <div class="row text-white text-center align-items-center mx-0" style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
+
+
 
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150"
@@ -80,7 +86,6 @@
             </section>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

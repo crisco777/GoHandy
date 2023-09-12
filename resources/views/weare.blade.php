@@ -12,6 +12,7 @@
 
             .bg-color {
                 background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
+
             }
 
             .wave {

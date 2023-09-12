@@ -4,10 +4,10 @@
             #content {
                 background: hsla(212, 75%, 16%, 0.685);
                 background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
-                background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url();
-                background-image: url(img/grupito.jpeg);
+                background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url(img/grupito.jpeg);
                 height: 700px;
-                w
+                background-size: cover;
+                position: relative;
             }
 
             .bg-color {
@@ -19,22 +19,19 @@
                 bottom: 0;
                 width: 100%;
             }
-
         </style>
     @endpush
 
     <div id="content" class="position-relative">
-        <div class="row text-white text-center align-items-center mx-0" style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
+        <div class="row text-white text-center align-items-center mx-0"
+            style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
 
-
-
         <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150"
-                 preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                      style="stroke: none; fill: #91c8e4;"></path>
+                    style="stroke: none; fill: #91c8e4;"></path>
             </svg>
         </div>
     </div>
@@ -88,6 +85,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
 </x-layout>

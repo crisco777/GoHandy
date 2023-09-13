@@ -47,7 +47,7 @@
         <p class="text-center fs-1" style="color: rgb(0, 0, 0); font-family: 'Bevan', serif;">¿Buscas
             algo?
         </p>
-        <p class="text-center fs-4" style="color: rgb(0, 0, 0);">Prueba
+        <p class="text-center fs-4" style="color: rgb(0, 0, 0); font-family: 'Bevan';">Prueba
             las
             siguientes opciones
         </p>
@@ -60,7 +60,7 @@
                                 <img src="/icons/{{ $service->type }}.png" class="card-img-top mx-auto mt-2 "
                                     style="width: 45%">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">{{ $service->type }}</h5>
+                                    <h5 style="font-family: 'Bevan';" class="card-title">{{ $service->type }}</h5>
                                 </div>
                             </div>
                         </a>

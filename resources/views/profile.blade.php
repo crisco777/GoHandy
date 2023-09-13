@@ -1,15 +1,19 @@
 <x-layout>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+
     @props([])
-    <div class="container">
+    <div class="container wrapper mt-4 ">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center">
 
-                <img src="{{ asset('img/logochiquito.jpg') }}" style="width: 30vh; height:30vh; margin-top:5vh">
+                <img src="{{ asset('img/todos.jpeg') }}"
+                    style="width: 30vh; height:30vh; margin-top:5vh, border-radius:10vh">
             </div>
         </div>
         <div class="text-center row">
-            <h4>{{ $user->firstname }} {{ $user->lastname }}</h4>
-            <div class="mt-2">
+            <h4 style="font-family: 'Bevan'; ">{{ $user->firstname }} {{ $user->lastname }}</h4>
+            <div class="mt-2 ">
                 <span>Email:</span>
                 <span>{{ $user->email }}</span>
             </div>
@@ -46,9 +50,14 @@
                 <p>{{ $user->contact }}</p>
             </div>
 
-            <div class="container row col-2 align-items-left">
-                <button type="button" class="btn btn-primary">Solicitar Servicio</button>
+
+            <div class="container row align-items-left">
+                <a href="{{ route('hired') }}">
+                    <button type="button" class="btn" style="background-color:#050A30; color:rgb(255, 255, 255)"> Solicitar Servicio
+                    </button>
+                </a>
             </div>
+
         </div>
     </div>
 </x-layout>

@@ -50,12 +50,12 @@
         </style>
     @endpush
 
-    
+
 
     <div class="team">
         <div class="container">
             <div class="text-center pt-4">
-                <h1>{{ $service }}</h1>
+                <h1 style="font-family: 'Bevan'; text-decoration:blanchedalmond">{{ $service }}</h1>
             </div>
             <div class="row row-cols-3">
                 @foreach ($users as $user)

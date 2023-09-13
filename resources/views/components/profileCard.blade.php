@@ -4,11 +4,10 @@
 <div class="col mt-4">
     <div class="member d-flex align-items-start h-100">
         <div class="teampic">
-            <img src="{{ asset('imgprofile/vegeta.jpg') }}" class="img-fluid" alt="team1">
+            <img src="{{ asset('img/todos.jpeg') }}" class="img-fluid" alt="team1">
         </div>
         <div class="member-info">
-            <h4>{{ $user->firstname }} {{ $user->lastname }}</h4>
-            <span>Email:{{$user->email}}</span>
+            <h4 style="font-family: 'Bevan'">{{ $user->firstname }} {{ $user->lastname }}</h4>
             <span>Edad: {{$user->age}} </span>
             <span>Sexo:{{$user->sex->type }} </span>
             <span>Servicios disponibles:
@@ -17,10 +16,11 @@
                 @endforeach
             </span>
             <p>Hola jaja</p>
-            <span>Dirección:{{$user->address}}</span>
+            <span>Municipio: {{$user->town->name}}</span>
             <p>Número de contacto:{{$user->contact}}</p>
+
             <a href="{{ route('services.profile', ['user' => $user->id]) }}">
-                <button style="background-color: #050A30; " type="button" class="btn btn-primary">Ver perfil</button>
+                <button style="background-color: #050A30; color:white " type="button" class="btn">Ver perfil</button>
             </a>
         </div>
     </div>

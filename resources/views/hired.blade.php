@@ -5,7 +5,7 @@
 
     <body>
             <div class="wrapper">
-                <h2>CONFIRMATION</h2>
+                <h2 style="font-family: 'bevan">CONFIRMATION</h2>
 
                 <div class="input-box">
                     <span>TU SERVICIO HA SIDO SOLICITADO EXITOSAMENTE</span>

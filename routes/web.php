@@ -129,3 +129,7 @@ Route::get('profile/{user}', function (User $user) {
         'user' => $user
     ]);
 })->name('services.profile');
+
+Route::get('hired', function () {
+    return view('hired');
+})->name('hired');

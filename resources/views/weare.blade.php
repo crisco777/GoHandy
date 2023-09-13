@@ -1,14 +1,18 @@
 <x-layout>
     @push('css')
         <style>
-            body {
-                background: linear-gradient(to right, #91c8e4, #4682a9, #2c74b3);
+            #content {
+                background: hsla(212, 75%, 16%, 0.685);
+                background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
+                background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url(img/grupito.jpeg);
+                height: 700px;
+                background-size: cover;
+                position: relative;
             }
 
-            .about-1 h1 {
-                text-align: center;
-                color: black;
-                font-weight: bold;
+            .bg-color {
+                background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
+
             }
 
             /* por si pongo algo abajo del acerca de nosotros
@@ -184,12 +188,12 @@
 
     <div id="content" class="position-relative">
         <div class="row text-white text-center align-items-center mx-0"
-            style="height: calc(30vh - 100px); font-family: 'Bevan', serif">
+            style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
 
-        <div class="wave" style="height:250px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 70%; width: 100%;">
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #91c8e4;"></path>
             </svg>
@@ -315,55 +319,7 @@
                     </div>
                 </div>
 
-
-                <!--team member 3-->
-                <div class="col-lg-6  mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="teampic">
-                            <img src="{{ asset('img/ale.jpeg') }}" class="img-fluid" alt="team1">
-                        </div>
-
-                        <div class="member-info">
-                            <h4>Alexandra Rodriguez</h4>
-                            <p>Centro ¡Supérate! Fundación Poma</p>
-                            <p>Junior</p>
-                            <p>Área: Marketing</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--team member 4-->
-                <div class="col-lg-6  mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="teampic">
-                            <img src="{{ asset('img/briss.jpeg') }}" class="img-fluid" alt="team1">
-                        </div>
-
-                        <div class="member-info">
-                            <h4>Brisslie Gonzales</h4>
-                            <p>Centro ¡Supérate! Fundación Poma</p>
-                            <p>Junior</p>
-                            <p>Área: Backend</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--team member 5-->
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-center justify-content-center">
-                        <div class="teampic">
-                            <img src="{{ asset('img/kim.jpeg') }}" class="img-fluid" alt="team1">
-                        </div>
-                        <div class="member-info">
-                            <h4>Kimberly Guzmán</h4>
-                            <p>Centro ¡Supérate! Fundación Poma</p>
-                            <p>Junior</p>
-                            <p>Área: Fronted</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </x-layout>

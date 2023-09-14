@@ -16,21 +16,29 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-                                        .about-1 p{
-                                            text-align: center;
-                                            padding: 3px;
-                                            color: #fff;
-                                        }
-                                        */
-
+                                                    .about-1 p{
+                                                        text-align: center;
+                                                        padding: 3px;
+                                                        color: #fff;
+                                                    }
+                                                    */
             .godown {
                 z-index: 10;
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                border-width: 0 0 35vh 100vw;
+                border-width: 0 0 25vh 100vw;
                 border-style: solid;
                 border-color: transparent transparent white transparent;
+            }
+            .goup {
+                z-index: 10;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                border-width: 0 0 25vh 100vw;
+                border-style: solid;
+                border-color: transparent transparent #4682a9 transparent;
             }
 
             .about-item {
@@ -198,6 +206,8 @@
             .cards {
                 background-color: #4682a9;
             }
+
+
         </style>
     @endpush
 
@@ -287,9 +297,9 @@
                 </div>
             </div>
         </div>
-
     </section>
 
+    <div class="goup"></div>
     <section class="cards">
 
         <div class="about-1">

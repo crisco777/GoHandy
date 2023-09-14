@@ -16,12 +16,23 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-            .about-1 p{
-                text-align: center;
-                padding: 3px;
-                color: #fff;
+                                        .about-1 p{
+                                            text-align: center;
+                                            padding: 3px;
+                                            color: #fff;
+                                        }
+                                        */
+
+            .godown {
+                z-index: 10;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-width: 0 0 35vh 100vw;
+                border-style: solid;
+                border-color: transparent transparent white transparent;
             }
-            */
+
             .about-item {
                 margin-bottom: 20px;
                 margin-top: 20px;
@@ -183,6 +194,10 @@
             .section-title p {
                 margin-top: 20px;
             }
+
+            .cards {
+                background-color: #4682a9;
+            }
         </style>
     @endpush
 
@@ -191,133 +206,131 @@
             style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
+        <div class="godown"></div>
 
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #91c8e4;"></path>
-            </svg>
-        </div>
     </div>
 
 
+    <section id="about">
+        <div class="about-1">
+            <h1 class="text-white" style="font-family: 'bevan'">Quienes somos</h1>
+        </div>
 
-        <section id="about">
-
-            <div class="about-1">
-                <h1 class="text-white" style="font-family: 'bevan'">Quienes somos</h1>
-            </div>
-
-            <div class="mt-4" id="about-2">
-                <div class="content-box-lg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="about-item text-center">
-                                    <i class=""></i>
-                                    <h3 style="font-family: 'bevan'">Misión</h3>
-                                    <hr>
-                                    <p>Ofrecer un espacio que brinde una amplia gama de servicios domésticos de alta
-                                        calidad para satisfacer las necesidades de nuestros clientes, brindando
-                                        soluciones efectivas, accesibles y confiables.</p>
-                                </div>
+        <div class="mt-4" id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="about-item text-center">
+                                <i class=""></i>
+                                <h3 style="font-family: 'bevan'">Misión</h3>
+                                <hr>
+                                <p>Ofrecer un espacio que brinde una amplia gama de servicios domésticos de alta
+                                    calidad para satisfacer las necesidades de nuestros clientes, brindando
+                                    soluciones efectivas, accesibles y confiables.</p>
                             </div>
-                            <div class="col-6">
-                                <div class="about-item text-center">
-                                    <i class=""></i>
-                                    <h3 style="font-family: 'bevan'">Visión</h3>
-                                    <hr>
-                                    <p>Ser la principal plataforma en línea para la contratación de servicios en el
-                                        pais, brindando a nuestros usuarios una plataforma confiable, eficiente y segura
-                                        que satisfaga todas sus necesidades.</p>
-                                </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-item text-center">
+                                <i class=""></i>
+                                <h3 style="font-family: 'bevan'">Visión</h3>
+                                <hr>
+                                <p>Ser la principal plataforma en línea para la contratación de servicios en el
+                                    pais, brindando a nuestros usuarios una plataforma confiable, eficiente y segura
+                                    que satisfaga todas sus necesidades.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="about-1">
-                <h1  class="text-white mt-5" style="font-family: 'bevan'">Nuestros valores</h1>
-            </div>
-
-            <div class="mt-4" id="about-2">
-                <div class="content-box-lg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="about-item text-center">
-                                    <i class=""></i>
-                                    <h3 style="font-family: 'bevan'">Integridad</h3>
-                                    <hr>
-                                    <p>Go Handy busca asegurar a sus usuarios interesados en contratar que la persona
-                                        con la que están estableciendo contacto les brindará un servicio de la mejor
-                                        calidad, trabajando de manera honesta, consciente e integral.</p>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="about-item text-center">
-                                    <i class=""></i>
-                                    <h3 style="font-family: 'bevan'">Confianza</h3>
-                                    <hr>
-                                    <p>El sitio trabaja a través de la confianza, garantizando tanto a nuestros usuarios
-                                        que buscan contratar un servicio como a los que están ofreciendo su trabajo. Un
-                                        sitio web construido en la confianza y que busca permitir un entorno seguro a
-                                        todos sus usuarios.</p>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="about-item text-center">
-                                    <i class=""></i>
-                                    <h3 style="font-family: 'bevan'">Compromiso</h3>
-                                    <hr>
-                                    <p>Brindar a los usuarios personas con responsabilidad y comprometidos a ofrecer y
-                                        realizar su trabajo de manera excelente</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <div class="about-1">
-            <h1 class="text-white" style="font-family: 'bevan'">Conoce a nuestro equipo</h1>
+            <h1 class="text-white mt-5" style="font-family: 'bevan'">Nuestros valores</h1>
+        </div>
+
+        <div class="mt-4" id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="about-item text-center">
+                                <i class=""></i>
+                                <h3 style="font-family: 'bevan'">Integridad</h3>
+                                <hr>
+                                <p>Go Handy busca asegurar a sus usuarios interesados en contratar que la persona
+                                    con la que están estableciendo contacto les brindará un servicio de la mejor
+                                    calidad, trabajando de manera honesta, consciente e integral.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="about-item text-center">
+                                <i class=""></i>
+                                <h3 style="font-family: 'bevan'">Confianza</h3>
+                                <hr>
+                                <p>El sitio trabaja a través de la confianza, garantizando tanto a nuestros usuarios
+                                    que buscan contratar un servicio como a los que están ofreciendo su trabajo. Un
+                                    sitio web construido en la confianza y que busca permitir un entorno seguro a
+                                    todos sus usuarios.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="about-item text-center">
+                                <i class=""></i>
+                                <h3 style="font-family: 'bevan'">Compromiso</h3>
+                                <hr>
+                                <p>Brindar a los usuarios personas con responsabilidad y comprometidos a ofrecer y
+                                    realizar su trabajo de manera excelente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cards">
+
+        <div class="about-1">
+            <h1 class="text-white" style="font-family: 'bevan';text-align:center">Conoce a nuestro equipo</h1>
         </div>
         <div id="about-2">
 
-        <div class="team container align-items-center">
-            <div class="row  d-flex align-items-start justify-content-center">
-                <div class="row-col-2"></div>
-                <!--team member 1-->
-                <div style="border-radius: 20px" class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="teampic">
-                            <img src="{{ asset('img/criso.jpeg') }}" class="img-fluid" alt="team1">
-                        </div>
-                        <div class="member-info">
-                            <h4>Ricardo Bautista</h4>
-                            <p>Centro ¡Supérate! Fundación Poma</p>
-                            <p>Junior</p>
-                            <p>Área: Backend</p>
+            <div class="team container align-items-center">
+                <div class="row  d-flex align-items-start justify-content-center">
+                    <div class="row-col-2"></div>
+                    <!--team member 1-->
+                    <div style="border-radius: 20px" class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/criso.jpeg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Ricardo Bautista</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Backend</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--team member 2-->
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="teampic">
-                            <img src="{{ asset('img/nestor.jpeg') }}" class="img-fluid" alt="team1">
-                        </div>
-                        <div class="member-info">
-                            <h4>Nestor Ayala</h4>
-                            <p>Centro ¡Supérate! Fundación Poma</p>
-                            <p>Junior</p>
-                            <p>Área: Fronted</p>
+                    <!--team member 2-->
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/nestor.jpeg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Nestor Ayala</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

@@ -1,45 +1,34 @@
 <x-layout>
     @push('css')
         <style>
-            .raise:hover,
-            .raise:focus {
+            .card:hover,
+            .card:focus{
                 box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
                 -webkit-transform: translateY(-0.25em);
                 transform: translateY(-0.25em);
             }
 
-            .raise {
-                --color: #2c74b3;
-                --hover: #91c8e4;
-            }
+                .card {
+                    --color:  #4682a9;
+                    --hover:  #0a2647;
+                }
 
-            button {
-                color: var(--color);
-                -webkit-transition: 0.25s;
-                transition: 0.25s;
-            }
+                .card {
+                    color: var(--color);
+                    -webkit-transition: 0.25s;
+                    transition: 0.25s;
+                }
 
-            button:hover,
-            button:focus {
-                border-color: var(--hover);
-                color: #2c74b3;
-            }
+                .card:hover,
+                .card:focus {
+                    border-color: var(--hover);
+                    color:#0a2647;
+                }
 
-            button {
-                background: none;
-                border: 2px solid;
-                font: inherit;
-                line-height: 1;
-                margin: 0.5em;
-                padding: 1em 2em;
-                width: 50%;
-                left: 50%;
-            }
 
-            code {
-                color: #2c74b3;
-                font: inherit;
-            }
+                .container {
+                    background-color: #91c8e4;
+                }
         </style>
     @endpush
 
@@ -55,6 +44,7 @@
             <div class="row row-cols-3">
                 @foreach ($services as $service)
                     <div class="col">
+                        <br>
                         <a href="{{ route('services.index', ['service' => $service->type]) }}">
                             <div class="card mb-4">
                                 <img src="/icons/{{ $service->type }}.png" class="card-img-top mx-auto mt-2 "

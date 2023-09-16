@@ -222,7 +222,7 @@
 
     <section id="about">
         <div class="about-1">
-            <h1 class="text-black" style="font-family: 'bevan'; text-align:center">Quienes somos</h1>
+            <h1 class="text-black" style="font-family: 'bevan'; text-align:center">Quiénes somos</h1>
         </div>
 
         <div class="mt-4" id="about-2">

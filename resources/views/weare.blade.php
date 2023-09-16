@@ -364,7 +364,7 @@
                                 <h4>Alexandra Rodriguez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
-                                <p>Área: Fronted</p>
+                                <p>Área: Marketing</p>
                             </div>
                         </div>
                     </div>

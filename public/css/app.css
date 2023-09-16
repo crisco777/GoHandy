@@ -106,7 +106,7 @@ body{
 }
 body{
   min-height: 100vh;
-  background: linear-gradient(to right, #4682a9, #0a2647);
+  background: #0a2647;
 }
 .wrapper{
   max-width: 800px;

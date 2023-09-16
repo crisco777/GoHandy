@@ -1,9 +1,11 @@
 <x-layout>
 
+
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    </head>
+   
   <div class="wrapper" style="width: 100vh;">
-    <h2>Registration</h2>
+    <span style="font-family: Bevan; font-size:30px">Registration</span>
     <form action="/profcomplete" method="POST">
         @csrf
       <div class="input-box">
@@ -55,7 +57,7 @@
         @endif
 
       <div class="input-box  button">
-        <input type="Submit" value="Register Now">
+        <input style="background-color: #050A30; color:white " type="Submit" value="Register Now">
       </div>
     </form>
 </x-layout>

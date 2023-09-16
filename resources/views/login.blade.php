@@ -1,7 +1,7 @@
 @push('css')
     <style>
         body {
-            background: linear-gradient(to right, #4682a9, #0a2647);
+            background:  #0a2647;
             overflow-y: hidden;
         }
 
@@ -14,19 +14,17 @@
 @endpush
 
 <x-layout>
-    <div class="container  rounded w-75" x-data="{ showSignUp: false }">
-        <div class="row align-items-stretch justify-content-center align-items-center"
-            style="height: 80vh; width:150vh; background-color:white ">
-            <div class="col-6" style="margin-top: 18vh;">
-                <img src="img/logo 2.png" alt="" style="width:75vh">
-            </div>
-            <div class="col bg-white p-5 rounded-end transition" x-show="!showSignUp"
-                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+    <div class="container w-75" x-data="{ showSignUp: false }">
+        <div class="row align-items-center  justify-content-center align-items-center  rounded-4"
+            style="height: 80vh; width:150vh; background-color:white">
 
-                <h2 class="fw-bold text-center mt-2 mb-4">Bienvenido</h2>
+            <img src="img/logo 2.png" alt="" style="width:50vh; height:auto">
 
+            <div class="col-6 bg-white p-5 rounded-4 transition align-items-center" x-show="!showSignUp"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-0"
+                x-transition:leave-start="opacity-0" x-transition:leave-end="opacity-0">
 
+                <h2 style="font-family: bevan" class="fw-bold text-center mt-2 mb-5">Bienvenido</h2>
 
                 <form action="/login" method="POST">
                     @csrf
@@ -34,28 +32,29 @@
                         <label for="email" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" name="email">
                     </div>
-                    <div class="mb-3">
+                    <div>
                         <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="password">
                     </div>
 
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary mt-5">Iniciar sesión</button>
+                    <div class="d-grid mb-2">
+                        <button type="submit" style="background-color: #0a2647; color:white" class="btn mt-3">Iniciar
+                            sesión</button>
                     </div>
                 </form>
 
-                <div class="mt-3">
-                    <span>No tienes cuenta? <button class="btn btn-outline-primary"
+                <div class="mt-4">
+                    <span>No tienes cuenta? <button style="background-color: #0a2647; color:white" class="btn"
                             x-on:click="showSignUp = true">Registrarme</button></span>
                 </div>
             </div>
 
-            <div class="col bg-white p-5 rounded-end transition" x-show="showSignUp" style="height: 80vh; width:150vh"
-                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+            <div class="col-5 bg-white rounded-4 transition align-items-center" x-show="showSignUp"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-0"
+                x-transition:leave-start="opacity-0" x-transition:leave-end="opacity-0">
 
 
-                <h2 class="fw-bold text-center mt-2">Bienvenida</h2>
+                <h2 style="font-family: bevan" class="fw-bold text-center mt-2 mb-5">Bienvenido</h2>
 
                 <form action="/signup" method="POST">
                     @csrf
@@ -66,10 +65,8 @@
                     <input class="form-control mb-3" placeholder="Confirm password" label="Confirmacion Contraseña"
                         name="password_confirmation" type="password" />
 
-                    <span>¿Qué quieres hacer?</span>
-                    <br>
-                    <br>
-                    <div class="d-flex flex-row mb-2">
+                    <span class="mb-4">¿Qué quieres hacer?</span>
+                    <div class="d-flex flex-row mt-3 mb-3">
                         @foreach ($roles as $role)
                             <div class="form-check col-6">
                                 <label class="form-check-label">
@@ -82,12 +79,13 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                        <button type="submit" style="background-color: #0a2647; color:white" class="btn">Crear
+                            Cuenta</button>
                     </div>
                 </form>
 
-                <div class="my-2">
-                    <span>Ya tienes cuenta? <button class="btn btn-outline-primary"
+                <div class="mt-3">
+                    <span>Ya tienes cuenta? <button style="background-color: #0a2647; color:white" class="btn"
                             x-on:click="showSignUp = false">Inicia sesion</button></span>
                 </div>
             </div>

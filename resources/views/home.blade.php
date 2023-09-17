@@ -1,34 +1,34 @@
 <x-layout>
     @push('css')
         <style>
+            body {
+                background-color: #8BC6EC;
+                background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            }
+
             .card:hover,
-            .card:focus{
+            .card:focus {
                 box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
                 -webkit-transform: translateY(-0.25em);
                 transform: translateY(-0.25em);
             }
 
-                .card {
-                    --color:  #4682a9;
-                    --hover:  #0a2647;
-                }
+            .card {
+                --color: #4682a9;
+                --hover: #0a2647;
+            }
 
-                .card {
-                    color: var(--color);
-                    -webkit-transition: 0.25s;
-                    transition: 0.25s;
-                }
+            .card {
+                color: var(--color);
+                -webkit-transition: 0.25s;
+                transition: 0.25s;
+            }
 
-                .card:hover,
-                .card:focus {
-                    border-color: var(--hover);
-                    color:#0a2647;
-                }
-
-
-                .container {
-                    background-color: #91c8e4;
-                }
+            .card:hover,
+            .card:focus {
+                border-color: var(--hover);
+                color: #0a2647;
+            }
         </style>
     @endpush
 

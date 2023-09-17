@@ -2,10 +2,9 @@
     <style>
         body {
             background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 
         }
-
     </style>
 @endpush
 
@@ -70,6 +69,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
             </div>
 
             <div class="col-md-6">
-                <img class="rounded-circle mx-auto d-block" src="img/criso.jpeg" style="width: 70vh; height: 70vh; margin-top:5vh">
+                <img class="rounded-circle mx-auto d-block" src="img/criso.jpeg"
+                    style="width: 70vh; height: 70vh; margin-top:5vh">
             </div>
 </x-layout>

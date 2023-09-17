@@ -1,7 +1,7 @@
 @push('css')
     <style>
         body {
-            background:  #0a2647;
+            background: #0a2647;
             overflow-y: hidden;
         }
 

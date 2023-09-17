@@ -16,12 +16,12 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-                                                                .about-1 p{
-                                                                    text-align: center;
-                                                                    padding: 3px;
-                                                                    color: #fff;
-                                                                }
-                                                                */
+                                                                    .about-1 p{
+                                                                        text-align: center;
+                                                                        padding: 3px;
+                                                                        color: #fff;
+                                                                    }
+                                                                    */
             .godown {
                 z-index: 10;
                 position: absolute;

@@ -4,13 +4,13 @@
     </head>
 
     <body>
-            <div class="wrapper">
-                <h2 style="font-family: 'bevan">CONFIRMATION</h2>
+        <div class="wrapper">
+            <h2 style="font-family: 'bevan">CONFIRMATION</h2>
 
-                <div class="input-box">
-                    <span>TU SERVICIO HA SIDO SOLICITADO EXITOSAMENTE</span>
-                </div>
-
+            <div class="input-box">
+                <span>TU SERVICIO HA SIDO SOLICITADO EXITOSAMENTE</span>
             </div>
+
+        </div>
     </body>
 </x-layout>

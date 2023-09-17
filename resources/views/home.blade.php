@@ -6,6 +6,9 @@
                 background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
             }
 
+            .card{
+                border-radius: 70px; with: 10   0px;
+            }
             .card:hover,
             .card:focus {
                 box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -14,12 +17,6 @@
             }
 
             .card {
-                --color: #4682a9;
-                --hover: #0a2647;
-            }
-
-            .card {
-                color: var(--color);
                 -webkit-transition: 0.25s;
                 transition: 0.25s;
             }

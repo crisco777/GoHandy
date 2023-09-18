@@ -12,15 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active text-black fs-5 fw-bold" aria-current="page" href="http://127.0.0.1:8000/weare">¿Quienes
+                    <a class="nav-link active text-black fs-5" style="font-family: 'Bevan';" aria-current="page" href="http://127.0.0.1:8000/weare">¿Quienes
                         somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-black fs-5 fw-bold" aria-current="page" href="{{route('profile')}}">
+                    <a class="nav-link active text-black fs-5" style="font-family: 'Bevan';" aria-current="page" href="{{route('profile')}}">
                         Ver perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-black fs-5 fw-bold" aria-current="page" href="http://127.0.0.1:8000/login">
+                    <a class="nav-link active text-black fs-5" style="font-family: 'Bevan';" aria-current="page" href="http://127.0.0.1:8000/login">
                         Cerrar Sesión</a>
                 </li>
             </ul>

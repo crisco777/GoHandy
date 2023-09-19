@@ -19,7 +19,7 @@
         .card {
             width: 100%;
             margin: 20px;
-            border-radius: 6px;
+            border-radius: 10px;
             overflow: hidden;
             background: #fff;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 2);
@@ -56,12 +56,12 @@
 
 @props(['user'])
 
-<div class="row row-cols-1">
-
-    <div class="container">
-        <div class="card">
+<div class="row row-cols-1 g-4">
+    <div class="col">
+        <div class="card h-100">
             <figure>
-                <img src="{{ asset('img/grupito.jpeg') }}" class="img-fluid " alt="team1" style="padding: 2vh">
+                <img src="{{ asset('img/grupito.jpeg') }}" class="rounded-5 w-100 h-auto" alt="team1"
+                    style="padding: 2vh">
             </figure>
             <div class="contenido">
                 <h3 style="font-family: bevan">{{ $user->firstname }} {{ $user->lastname }}</h3>

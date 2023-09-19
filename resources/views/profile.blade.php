@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-4">
                 <img src="{{ asset('img/grupito.jpeg') }}"
-                    style="width: 30vh; height:30vh">
+                    style="width: 30vh; height:30vh" class="rounded-4">
             </div>
             <div class="col-7">
 

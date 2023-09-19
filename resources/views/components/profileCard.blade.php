@@ -61,10 +61,10 @@
     <div class="container">
         <div class="card">
             <figure>
-                <img src="{{ asset('imgprofile/vegeta.jpg') }}" class="img-fluid" alt="team1">
+                <img src="{{ asset('img/grupito.jpeg') }}" class="img-fluid " alt="team1" style="padding: 2vh">
             </figure>
             <div class="contenido">
-                <h3>{{ $user->firstname }} {{ $user->lastname }}</h3>
+                <h3 style="font-family: bevan">{{ $user->firstname }} {{ $user->lastname }}</h3>
                 <h6>Edad: {{ $user->age }} </h6>
                 <h6>Sexo:{{ $user->sex->type }} </h6>
                 <h6>Servicios disponibles:

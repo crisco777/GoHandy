@@ -3,13 +3,13 @@
 
 
     @props([])
-    <div class="container wrapper mt-4 ">
+    <div class="container wrapper mt-5 ">
         <div class="row">
-            <div class="col-6">
-                <img src="{{ asset('img/todos.jpeg') }}"
-                    style="width: 30vh; height:30vh; margin-top:5vh, border-radius:10vh">
+            <div class="col-4">
+                <img src="{{ asset('img/grupito.jpeg') }}"
+                    style="width: 30vh; height:30vh">
             </div>
-            <div class="col-6">
+            <div class="col-7">
 
                 <div>
                     <h4 style="font-family: 'Bevan'; ">{{ $user->firstname }} {{ $user->lastname }}</h4>

@@ -1,7 +1,7 @@
 @push('css')
     <style>
         body {
-            background: #0a2647;
+            background: #090539;
             overflow-y: hidden;
         }
 
@@ -38,13 +38,13 @@
                     </div>
 
                     <div class="d-grid mb-2">
-                        <button type="submit" style="background-color: #0a2647; color:white" class="btn mt-3">Iniciar
+                        <button type="submit" style="background-color: #090539; color:white" class="btn mt-3">Iniciar
                             sesión</button>
                     </div>
                 </form>
 
                 <div class="mt-4">
-                    <span>No tienes cuenta? <button style="background-color: #0a2647; color:white" class="btn"
+                    <span>No tienes cuenta? <button style="background-color: #090539; color:white" class="btn"
                             x-on:click="showSignUp = true">Registrarme</button></span>
                 </div>
             </div>
@@ -79,13 +79,13 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" style="background-color: #0a2647; color:white" class="btn">Crear
+                        <button type="submit" style="background-color: #090539; color:white" class="btn">Crear
                             Cuenta</button>
                     </div>
                 </form>
 
                 <div class="mt-3">
-                    <span>Ya tienes cuenta? <button style="background-color: #0a2647; color:white" class="btn"
+                    <span>Ya tienes cuenta? <button style="background-color: #090539; color:white" class="btn"
                             x-on:click="showSignUp = false">Inicia sesion</button></span>
                 </div>
             </div>

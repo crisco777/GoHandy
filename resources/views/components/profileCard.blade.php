@@ -76,7 +76,7 @@
                 <h6>Municipio: {{ $user->town->name }}</h6>
                 <h6>Número de contacto:{{ $user->contact }}</h6>
                 <a href="{{ route('services.profile', ['user' => $user->id]) }}">
-                    <button style="background-color: #050A30; color:white " type="button" class="btn">Ver
+                    <button style="background-color: #090539; color:white " type="button" class="btn">Ver
                         perfil</button>
                 </a>
             </div>

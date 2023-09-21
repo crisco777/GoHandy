@@ -1,4 +1,7 @@
 <x-layout>
+    @push('css')
+
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
@@ -56,7 +59,7 @@
             </div>
             <div class="container row align-items-left">
                 <a href="{{ route('hired') }}">
-                    <button type="button" class="btn" style="background-color:#050A30; color:rgb(255, 255, 255)">
+                    <button type="button" class="btn" style="background-color:#090539; color:rgb(255, 255, 255)">
                         Solicitar Servicio
                     </button>
                 </a>

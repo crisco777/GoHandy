@@ -19,7 +19,7 @@
                 </div>
 
                 <div>
-                    <span class="lead">Email:</span>
+                    <span>Email:</span>
                     <span>{{ $user->email }}</span>
                 </div>
 
@@ -42,12 +42,13 @@
                 </div>
 
                 <div>
-                    <span>Descripcion Personal</span>
-                    <p>Hola jaja</p>
+                    <span>Descripción Personal</span>
+                    <span>Siempre estoy abierto/a a nuevas oportunidades y desafíos.
+                        ¡No dudes en contactarme si deseas conocer más acerca de mí o explorar posibles colaboraciones!</span>
                 </div>
 
                 <div>
-                    <span>Direccion:</span>
+                    <span>Dirección:</span>
                     <span>{{ $user->address }}</span>
                 </div>
 

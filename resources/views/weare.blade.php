@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 @push('css')
     <style>
         * {
@@ -45,7 +43,7 @@
 
         }
 
-        section{
+        section {
             height: 650px;
             display: flex;
             justify-content: space-evenly;
@@ -54,13 +52,13 @@
             background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
         }
 
-        section h2{
+        section h2 {
             font-size: 50px;
             font-weight: 500;
             margin-bottom: 5px;
         }
 
-        section h3{
+        section h3 {
             position: center;
         }
 
@@ -97,11 +95,9 @@
             bottom: 0;
             width: 100%;
         }
-
     </style>
 @endpush
 
->>>>>>> Stashed changes
 <x-layout>
     @push('css')
         <style>
@@ -120,12 +116,12 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-                                                                        .about-1 p{
-                                                                            text-align: center;
-                                                                            padding: 3px;
-                                                                            color: #fff;
-                                                                        }
-                                                                        */
+                                                                            .about-1 p{
+                                                                                text-align: center;
+                                                                                padding: 3px;
+                                                                                color: #fff;
+                                                                            }
+                                                                            */
             .godown {
                 z-index: 10;
                 position: absolute;
@@ -266,7 +262,7 @@
                 width: 32px;
             }
 
-            .team .member .social a + a {
+            .team .member .social a+a {
                 margin-left: 8px;
             }
 
@@ -309,7 +305,7 @@
 
     <div id="content" class="position-relative">
         <div class="row text-white text-center align-items-center mx-0"
-             style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
+            style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
         <div class="godown"></div>
@@ -321,8 +317,6 @@
         <div class="about-1">
             <h1 class="text-black  my-5" style="font-family: 'bevan'; text-align:center">Quiénes somos</h1>
         </div>
-
-<<<<<<< Updated upstream
         <div class="mt-4" id="about-2">
             <div class="content-box-lg">
                 <div class="container">
@@ -332,7 +326,8 @@
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Misión</h3>
                                 <hr>
-                                <p class="mb-0">Ofrecer un espacio que brinde una amplia gama de servicios domésticos de
+                                <p class="mb-0">Ofrecer un espacio que brinde una amplia gama de servicios domésticos
+                                    de
                                     alta
                                     calidad para satisfacer las necesidades de nuestros clientes, brindando
                                     soluciones efectivas, accesibles y confiables.</p>
@@ -350,26 +345,6 @@
                             </div>
                         </div>
                     </div>
-=======
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #91c8e4;"></path>
-            </svg></div>
-        
-
-    </header>
-
-    <body>
-
-        <main>
-            <section class="mivision">
-                <div class="text-container">
-                    <h2 class="titulo"> Misión</h2>
-
-                    <p>We want to offer a space that provides a wide range of high quality domestic services to<br>
-                        meet the needs of our customers, providing effective, affordable and reliable solutions.</p>
->>>>>>> Stashed changes
                 </div>
             </div>
         </div>
@@ -398,7 +373,8 @@
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Confianza</h3>
                                 <hr>
-                                <p class="mb-0">El sitio trabaja a través de la confianza, garantizando tanto a nuestros
+                                <p class="mb-0">El sitio trabaja a través de la confianza, garantizando tanto a
+                                    nuestros
                                     usuarios
                                     que buscan contratar un servicio como a los que están ofreciendo su trabajo. Un
                                     sitio web construido en la confianza y que busca permitir un entorno seguro a
@@ -479,7 +455,7 @@
                                 <img src="{{ asset('img/ale.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info ms-4">
-                                <h4 >Alexandra Rodriguez</h4>
+                                <h4>Alexandra Rodriguez</h4>
                                 <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
                                 <p class="my-0">Junior</p>
                                 <p class="my-0">Área: Marketing</p>
@@ -507,6 +483,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
 </x-layout>

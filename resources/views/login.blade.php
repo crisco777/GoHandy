@@ -14,22 +14,25 @@
 @endpush
 
 <x-layout>
-    <div class="container w-75" x-data="{ showSignUp: false }">
-        <div class="row align-items-center  justify-content-center align-items-center  rounded-4"
-            style="height: 80vh; width:150vh; background-color:white">
+    <div class="container w-100" x-data="{ showSignUp: false }">
+        <div class="row align-items-center justify-content-center rounded-4" style="height: 100vh">
+
+
+        <div class="row align-items-center justify-content-center rounded-4"
+            style="height: 85vh;background-color:white">
 
             <img src="img/logo 2.png" alt="" style="width:50vh; height:auto">
 
-            <div class="col-6 bg-white p-5 rounded-4 transition align-items-center" x-show="!showSignUp"
+            <div class="col-6 bg-white ps-5 p-3 rounded-4 transition align-items-center" x-show="!showSignUp"
                 x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-0"
                 x-transition:leave-start="opacity-0" x-transition:leave-end="opacity-0">
 
-                <h2 style="font-family: bevan" class="fw-bold text-center mt-2 mb-5">Bienvenido</h2>
+                <h2 style="font-family: bevan" class="fw-bold text-center mb-5">Bienvenido</h2>
 
                 <form action="/login" method="POST">
                     @csrf
                     <div class="mb-3">
-                        <label for="email" class="form-label">Correo electronico</label>
+                        <label for="email" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" name="email">
                     </div>
                     <div>
@@ -89,6 +92,7 @@
                             x-on:click="showSignUp = false">Inicia sesion</button></span>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </x-layout>

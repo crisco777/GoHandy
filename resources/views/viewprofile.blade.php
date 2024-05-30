@@ -20,7 +20,7 @@
                             <p style="font-size: 4vh;" class="mb-1">Firstname</p>
                             <input class="btn btn-color concert fs-5 form-control"
                                 style="background-color: #fff; border-color: rgba(255, 255, 255, 0); border-radius: 20px; with: 50px;"
-                                name="firstname" :value="$user - > firstname" value={{ Auth::user()->firstname }} />
+                                name="firstname" :value="$user -  firstname" value={{ Auth::user()->firstname }} />
                             <p style="font-size: 4vh;" class="mb-1">Sex</p>
                             <input class="btn btn-color concert fs-5 form-control"
                                 style="background-color: #fff; border-color: rgba(255, 255, 255, 0); border-radius: 20px;"

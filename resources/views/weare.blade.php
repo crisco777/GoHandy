@@ -116,12 +116,11 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-                                                                            .about-1 p{
-                                                                                text-align: center;
-                                                                                padding: 3px;
-                                                                                color: #fff;
-                                                                            }
-                                                                            */
+                    .about-1 p{
+                    text-align: center;
+                    padding: 3px;
+                    color: #fff;
+                }*/
             .godown {
                 z-index: 10;
                 position: absolute;
@@ -326,7 +325,7 @@
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Misión</h3>
                                 <hr>
-                                <p class="mb-0">Ofrecer un espacio que brinde una amplia gama de servicios domésticos
+                                <p class="mb-0"> Ofrecer un espacio que brinde una amplia gama de servicios domésticos
                                     de
                                     alta
                                     calidad para satisfacer las necesidades de nuestros clientes, brindando

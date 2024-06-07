@@ -30,7 +30,7 @@
     @endpush
 
     <div class="mt-5">
-        <p class="text-center fs-1" style="color: rgb(0, 0, 0); font-family: 'Bevan', serif;">¿Buscas
+        <p class="text-center fs-1" style="color: rgb(0, 0, 0); font-family: 'Bevan', serif;">Buscas
             algo?
         </p>
         <p class="text-center fs-4" style="color: rgb(0, 0, 0); font-family: 'Bevan';">Prueba

@@ -1,103 +1,3 @@
-@push('css')
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #ffffff font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center
-        }
-
-        main {
-            padding: auto;
-        }
-
-        .container {
-            padding: auto;
-            width: 90px;
-            max-width: 1000px;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .titulo {
-            color: #000000;
-            font-size: 30px;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 60px;
-        }
-
-        header {
-            width: 100%;
-            height: 600px;
-            background: hsla(212, 75%, 16%, 0.685);
-            background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
-            background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url();
-            background-size: cover;
-            background-attachment: fixed;
-            position: relative;
-
-        }
-
-        section {
-            height: 650px;
-            display: flex;
-            justify-content: space-evenly;
-            padding: 0 40px;
-            align-content: center;
-            background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
-        }
-
-        section h2 {
-            font-size: 50px;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        section h3 {
-            position: center;
-        }
-
-        section .navbar {
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .text-header {
-            display: flex;
-            height: 430px;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .text-header h2 {
-            font-size: 40px;
-            color: white
-        }
-
-
-        p {
-            padding: 0px 0px 30px 15px;
-            font-family: 'Bevan', serif;
-            font-size: medium;
-        }
-
-        .wave {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-@endpush
-
 <x-layout>
     @push('css')
         <style>
@@ -116,11 +16,11 @@
             }
 
             /* por si pongo algo abajo del acerca de nosotros
-                    .about-1 p{
-                    text-align: center;
-                    padding: 3px;
-                    color: #fff;
-                }*/
+                .about-1 p{
+                text-align: center;
+                padding: 3px;
+                color: #fff; */
+
             .godown {
                 z-index: 10;
                 position: absolute;
@@ -144,7 +44,7 @@
             .about-item {
                 margin-bottom: 20px;
                 margin-top: 20px;
-                background-color: transparent;
+                background-color: none;
                 padding: 80px, 30px;
                 box-shadow: 0 0 9px rgba(0, 0, 0, .6);
             }
@@ -215,8 +115,12 @@
 
             .team .member .teampic {
                 overflow: hidden;
-                width: 175px;
+                width: 150px;
                 border-radius: 50%;
+            }
+
+            .team .member .member-info {
+                padding-left: 10px;
             }
 
             .team .member h4 {
@@ -230,9 +134,11 @@
                 display: block;
                 font-size: 15px;
                 padding-bottom: 10px;
+                position: 500;
             }
 
             .team .member span::after {
+                content: "";
                 position: absolute;
                 display: block;
                 width: 50px;
@@ -259,6 +165,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 32px;
+                height: #eff2f8;
             }
 
             .team .member .social a+a {
@@ -307,40 +214,38 @@
             style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
-        <div class="godown"></div>
+        <div class=" godown"></div>
 
     </div>
 
 
     <section id="about">
         <div class="about-1">
-            <h1 class="text-black  my-5" style="font-family: 'bevan'; text-align:center">Quiénes somos</h1>
+            <h1 class="text-black" style="font-family: 'bevan'; text-align:center">Quiénes somos</h1>
         </div>
+
         <div class="mt-4" id="about-2">
             <div class="content-box-lg">
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
-                            <div class="about-item text-center p-3">
+                            <div class="about-item text-center">
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Misión</h3>
                                 <hr>
-                                <p class="mb-0"> Ofrecer un espacio que brinde una amplia gama de servicios domésticos
-                                    de
-                                    alta
+                                <p>Ofrecer un espacio que brinde una amplia gama de servicios domésticos de alta
                                     calidad para satisfacer las necesidades de nuestros clientes, brindando
                                     soluciones efectivas, accesibles y confiables.</p>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="about-item text-center p-3">
+                            <div class="about-item text-center">
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Visión</h3>
                                 <hr>
-                                <p class="mb-0">Ser la principal plataforma en línea para la contratación de servicios
-                                    en el
-                                    país, brindando a nuestros usuarios una plataforma confiable, eficiente y segura
-                                    que satisfaga todas sus necesidades.</p>
+                                <p>Ser la principal plataforma en línea para la contratación de servicios en el
+                                    pais, brindando a nuestros usuarios una plataforma confiable, eficiente y segura
+                                    que satisfaga todas sus necesidades. </p>
                             </div>
                         </div>
                     </div>
@@ -357,37 +262,33 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
-                            <div class="about-item text-center p-3">
+                            <div class="about-item text-center">
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Integridad</h3>
                                 <hr>
-                                <p class="mb-0">Go Handy busca asegurar a sus usuarios interesados en contratar que la
-                                    persona
+                                <p>Go Handy busca asegurar a sus usuarios interesados en contratar que la persona
                                     con la que están estableciendo contacto les brindará un servicio de la mejor
                                     calidad, trabajando de manera honesta, consciente e integral.</p>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="about-item text-center p-3">
+                            <div class="about-item text-center">
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Confianza</h3>
                                 <hr>
-                                <p class="mb-0">El sitio trabaja a través de la confianza, garantizando tanto a
-                                    nuestros
-                                    usuarios
+                                <p>El sitio trabaja a través de la confianza, garantizando tanto a nuestros usuarios
                                     que buscan contratar un servicio como a los que están ofreciendo su trabajo. Un
                                     sitio web construido en la confianza y que busca permitir un entorno seguro a
                                     todos sus usuarios.</p>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="about-item text-center p-3">
+                            <div class="about-item text-center">
                                 <i class=""></i>
                                 <h3 style="font-family: 'bevan'">Compromiso</h3>
                                 <hr>
-                                <p class="mb-0">Brindar a los usuarios personas con responsabilidad y comprometidos a
-                                    ofrecer y
-                                    realizar su trabajo de manera excelente</p>
+                                <p>Brindar a los usuarios personas con responsabilidad y comprometidos a ofrecer y
+                                    realizar su trabajo de manera excelente.</p>
                             </div>
                         </div>
                     </div>
@@ -396,90 +297,94 @@
         </div>
     </section>
 
+    <div class="goup"></div>
     <section class="cards">
-        <h1 class="text-white text-center my-5" style="font-family: 'bevan'">Conoce a nuestro equipo</h1>
+
+        <div class="about-1">
+            <h1 class="text-white" style="font-family: 'bevan';text-align:center">Conoce a nuestro equipo</h1>
+        </div>
         <div id="about-2">
+
             <div class="team container align-items-center">
-                <div class="row d-flex align-items-start justify-content-center">
+                <div class="row  d-flex align-items-start justify-content-center">
+                    <div class="row-col-2"></div>
                     <!--team member 1-->
                     <div style="border-radius: 20px" class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-center">
-                            <div class="teampic">
-                                <img src="{{ asset('img/criso.jpeg') }}" class="img-fluid" alt="team1">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic"> <img src="{{ asset('img/criso.jpeg') }}" class="img-fluid"
+                                    alt="team1">
                             </div>
-
-                            <div class="member-info ms-4">
+                            <div class="member-info">
                                 <h4>Ricardo Bautista</h4>
-                                <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
-                                <p class="my-0">Junior</p>
-                                <p class="my-0">Área: Backend</p>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Backend</p>
                             </div>
                         </div>
                     </div>
 
                     <!--team member 2-->
                     <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-center">
+                        <div class="member d-flex align-items-start">
                             <div class="teampic">
                                 <img src="{{ asset('img/nestor.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
-                            <div class="member-info ms-4">
+                            <div class="member-info">
                                 <h4>Nestor Ayala</h4>
-                                <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
-                                <p class="my-0">Junior</p>
-                                <p class="my-0">Área: Fronted</p>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
                             </div>
                         </div>
                     </div>
 
                     <!--team member 3-->
                     <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-center">
+                        <div class="member d-flex align-items-start">
                             <div class="teampic">
                                 <img src="{{ asset('img/briss.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
-                            <div class="member-info ms-4">
+                            <div class="member-info">
                                 <h4>Brisslie Itzel</h4>
-                                <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
-                                <p class="my-0">Junior</p>
-                                <p class="my-0">Área: Fronted</p>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
                             </div>
                         </div>
                     </div>
 
                     <!--team member 4-->
                     <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-center">
+                        <div class="member d-flex align-items-start">
                             <div class="teampic">
                                 <img src="{{ asset('img/ale.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
-                            <div class="member-info ms-4">
+                            <div class="member-info">
                                 <h4>Alexandra Rodriguez</h4>
-                                <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
-                                <p class="my-0">Junior</p>
-                                <p class="my-0">Área: Marketing</p>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Marketing</p>
                             </div>
                         </div>
                     </div>
 
                     <!--team member 2-->
                     <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-center">
+                        <div class="member d-flex align-items-start">
                             <div class="teampic">
                                 <img src="{{ asset('img/kim.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
-                            <div class="member-info ms-4">
+                            <div class="member-info">
                                 <h4>Kimberly Guzman</h4>
-                                <p class="my-0">Centro ¡Supérate! Fundación Poma</p>
-                                <p class="my-0">Junior</p>
-                                <p class="my-0">Área: Fronted</p>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+
     </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

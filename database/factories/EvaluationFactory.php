@@ -24,7 +24,6 @@ class EvaluationFactory extends Factory
             'stars'=>fake()->numberBetween(1, 5),
             'comment'=>fake()->text(255),
             'anonym'=>fake()->boolean(),
-        ]
-
-}
+        ];
+    }
 }

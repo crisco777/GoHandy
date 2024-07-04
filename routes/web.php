@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('login');
+    return redirect('jome');
 });
 
 Route::get('login', function () {
@@ -135,3 +135,8 @@ Route::view('profile', 'profile');
 Route::get('hired', function () {
     return view('hired');
 })->name('hired');
+
+Route::get('jome', function () {
+    return view('jome');
+})->name('jome');
+

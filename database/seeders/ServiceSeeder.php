@@ -15,21 +15,12 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             'Fontaneria',
-            'Sastreria',
             'Carpinteria',
             'Electricista',
-            'Soldadura',
-            'Cerrajeria',
             'Albañileria',
-            'Vidrieria',
             'Servicio de pintura',
-            'Mecánico',
-            'Reparacion de electronicos',
-            'Limpieza domestica',
             'Jardineria',
-            'Cocina',
-            'Mantenimiento',
-            'Conductor',
+
         ];
 
         Service::factory(count($services))->sequence(fn($sqn) => [

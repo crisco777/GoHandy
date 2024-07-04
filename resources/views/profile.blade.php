@@ -1,10 +1,6 @@
 <x-layout>
     @push('css')
 
-
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-
     @props([])
     <div class="container wrapper mt-5 ">
         <div class="row">

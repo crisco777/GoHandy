@@ -2,8 +2,7 @@
     @push('css')
         <style>
             body {
-                background-color: #8BC6EC;
-                background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+                background-color: #ffffff;
             }
 
             .card{
@@ -30,8 +29,7 @@
     @endpush
 
     <div class="mt-5">
-        <p class="text-center fs-1" style="color: rgb(0, 0, 0); font-family: 'Bevan', serif;">Buscas
-            algo?
+        <p class="text-center fs-1" style="color: rgb(0, 0, 0); font-family: 'Bevan', serif;">¿Qué servicio buscas?
         </p>
         <p class="text-center fs-4" style="color: rgb(0, 0, 0); font-family: 'Bevan';">Prueba
             las

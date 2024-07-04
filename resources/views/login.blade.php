@@ -1,7 +1,7 @@
 @push('css')
     <style>
-        body {
-            background: #090539;
+        body {  
+            background: #ffffff;
             overflow-y: hidden;
         }
 
@@ -19,7 +19,7 @@
 
 
         <div class="row align-items-center justify-content-center rounded-4"
-            style="height: 85vh;background-color:white">
+            style="height: 85vh;background-color:#090539">
 
             <img src="img/logo 2.png" alt="" style="width:50vh; height:auto">
 

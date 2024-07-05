@@ -2,15 +2,15 @@
     @push('css')
 
     @props([])
-    <div class="container wrapper mt-5 ">
+    <div class="container wrapper ">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 " style="margin-top: 100px" >
                 <img src="{{ asset('img/grupito.jpeg') }}"
                     style="width: 30vh; height:30vh" class="rounded-4">
             </div>
             <div class="col-7">
 
-                <div>
+                <div style="margin-top: 100px">
                     <h4 style="font-family: 'Bevan'; ">{{ $user->firstname }} {{ $user->lastname }}</h4>
                 </div>
 

@@ -10,13 +10,13 @@
 
 
 <x-layout>
-    <div class="container py-4 bg.primary">
+    <div class="container py-4 bg.primary " >
         <div class="row">
             <div class="col-6">
                 <form action="updateprofile" method="post" class="input-box">
                     @csrf
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row" >
+                        <div class="col-6" >
                             <p style="font-size: 4vh;" class="mb-1">Firstname</p>
                             <input class="btn btn-color concert fs-5 form-control"
                                 style="background-color: #fff; border-color: rgba(255, 255, 255, 0); border-radius: 20px; with: 50px;"

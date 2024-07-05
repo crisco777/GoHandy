@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('jome');
+    return redirect('home');
 });
 
 Route::get('login', function () {
@@ -51,11 +51,11 @@ Route::post('/login', function () {
 
 }); */
 
-Route::get('/home', function () {
-    return view('home', [
+Route::get('/services', function () {
+    return view('services', [
         'services' => Service::all()
     ]);
-})->name('home');
+})->name('services');
 
 Route::post('/signup', function () {
     $attributes = request()->validate([
@@ -136,7 +136,9 @@ Route::get('hired', function () {
     return view('hired');
 })->name('hired');
 
-Route::get('jome', function () {
-    return view('jome');
-})->name('jome');
+Route::get('home', function () {
+    return view('home');
+})->name('home');
+
+
 

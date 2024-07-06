@@ -140,5 +140,7 @@ Route::get('home', function () {
     return view('home');
 })->name('home');
 
-
+Route::get('logintry', function (){
+    return view('logintry');
+})->name('logintry');
 

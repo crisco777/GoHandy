@@ -65,7 +65,7 @@
     </div>
 
 
-        <p class="text-center fs-4" style="color: rgb(0, 0, 0); font-family: 'Bevan';"> What are you looking for today?
+        <p class="text-center fs-4 fw-bold" style="color: rgb(0, 0, 0);"> What are you looking for today?
         </p>
         <div class="container">
             <div class="row row-cols-3">
@@ -77,7 +77,7 @@
                                 <img src="/icons/{{ $service->type }}.png" class="card-img-top mx-auto mt-2 "
                                     style="width: 45%">
                                 <div class="card-body text-center">
-                                    <h5 style="font-family: 'Bevan';" class="card-title">{{ $service->type }}</h5>
+                                    <h5   class="card-title fw-bold">{{ $service->type }} </h5>
                                 </div>
                             </div>
                         </a>

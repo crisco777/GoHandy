@@ -54,10 +54,10 @@
                     <div class="skills">
                         <h1 class="heading"> Contact</h1>
                         <ul>
-                            <li style="--i:0"> instagram</li>
-                            <li style="--i:0"> facebook</li>
-                            <li style="--i:0"> outlook</li>
-                            <li style="--i:0"> whatsapp</li>
+                            <li style="--i:0"> Instagram</li>
+                            <li style="--i:0"> Facebook</li>
+                            <li style="--i:0"> Outlook</li>
+                            <li style="--i:0"> Whatsapp</li>
                         </ul>
                     </div>
                 </section>

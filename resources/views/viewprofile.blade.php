@@ -51,15 +51,6 @@
                     </div>
 
                     <!-- ===== ===== Skills Contaienr ===== ===== -->
-                    <div class="skills">
-                        <h1 class="heading"> Contact</h1>
-                        <ul>
-                            <li style="--i:0"> Instagram</li>
-                            <li style="--i:0"> Facebook</li>
-                            <li style="--i:0"> Outlook</li>
-                            <li style="--i:0"> Whatsapp</li>
-                        </ul>
-                    </div>
                 </section>
 
 
@@ -151,12 +142,12 @@
                         <ul>
                             <li class="birthday">
                                 <h4 class="label">Birthday:</h4>
+                                <span class="info">22/2/2007 </span>
                             </li>
-                                <span class="info"> 22/2/2007 </span>
                             <li class="sex">
                                 <h4 class="label">Gender:</h4>
-                            </li>
                                 <span class="info">Male</span>
+                            </li>
                         </ul>
                     </div>
                 </section>

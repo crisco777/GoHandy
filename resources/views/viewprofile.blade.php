@@ -126,23 +126,23 @@
                         <ul>
                             <li class="phone">
                                 <h4 class="label">Phone:</h4>
-                                <span class="info">+503 7653 2482</span>
                             </li>
+                            <span class="info">+503 7653 2482</span>
 
                             <li class="address">
                                 <h4 class="label">Address:</h4>
-                                <span class="info">Carr. Panamericana, Santa Tecla <br></span>
                             </li>
+                            <span class="info">Carr. Panamericana, Santa Tecla <br></span>
 
                             <li class="email">
                                 <h4 class="label">E-mail:</h4>
-                                <span class="info">nlinares31@gmail.com</span>
                             </li>
+                            <span class="info">nlinares31@gmail.com</span>
 
                             <li class="site">
                                 <h4 class="label">Site:</h4>
-                                <span class="info">www.rsmarquetech.com</span>
                             </li>
+                            <span class="info">www.rsmarquetech.com</span>
                         </ul>
                     </div>
 
@@ -150,14 +150,13 @@
                         <h1 class="heading">Basic Information</h1>
                         <ul>
                             <li class="birthday">
-                                <h3 class="label">Birthday:</h3>
-                                <span class="info">22/2/2007</span>
+                                <h4 class="label">Birthday:</h4>
                             </li>
-
+                                <span class="info"> 22/2/2007 </span>
                             <li class="sex">
-                                <h3 class="label">Gender:</h3>
-                                <span class="info">Male</span>
+                                <h4 class="label">Gender:</h4>
                             </li>
+                                <span class="info">Male</span>
                         </ul>
                     </div>
                 </section>

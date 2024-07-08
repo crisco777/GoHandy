@@ -340,7 +340,7 @@
                                 <img class="card-img-top mx-auto mt-2" src="img/taylor.jpg" alt="" style="width: 200px; height: 250px">
                             </div>
 
- 
+
                             <div class="text-center p-4">
                                 <h5 class="mb-0">Taylor swift</h5>
                                 <small>Pintor</small>
@@ -396,7 +396,7 @@
 
         <!-- Comienzo de footer -->
         <div class="container-fluid bg-dark text-light footer pt-2 mt-2 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
+            <div class="container py-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-white mb-3">Company</h4>
@@ -405,6 +405,7 @@
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                     </div>
+
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-white mb-3">Contact</h4>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+503 7533 5353</p>
@@ -421,14 +422,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-white mb-3">email</h4>
-                        <p>you can put youyr email for contac mor faster </p>
+                    <div class="col-lg-3 col-md-2">
+                        <h4 class="text-white mb-2">email</h4>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
                                 placeholder="Your email">
                             <button type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" >SignUp</button>
                         </div>
                     </div>
                 </div>

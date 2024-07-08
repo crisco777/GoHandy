@@ -140,5 +140,13 @@ Route::get('home', function () {
     return view('home');
 })->name('home');
 
+Route::get('notifications', function () {
+    return view('notifications');
+})->name('notifications');
+
+Route::get('viewprofile', function () {
+    return view('viewprofile');
+})->name('viewprofile');
+
 
 

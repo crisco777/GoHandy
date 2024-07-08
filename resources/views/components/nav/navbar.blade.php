@@ -1,8 +1,8 @@
 <link href="{{ asset("css/style.css") }}" rel="stylesheet">
 
 
-<div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+<div class="container ">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 ">
         <a href="{{route('home')}}" class="navbar-brand p-0">
             <h1 class="text-primary m-0 fw-bold fw-2000 "></i>GoHandy</h1>
         </a>
@@ -14,6 +14,8 @@
                 <a href="{{ route('home') }}" class="nav-item nav-link active fw-bold">Home</a>
                 <a href="{{ route('services') }}" class="nav-item nav-link fw-bold">Services</a>
                 <a href="premium.html" class="nav-item nav-link fw-bold">Premium</a>
+                <a href="{{ route('viewprofile') }}" class="nav-item nav-link fw-bold">Profile</a>
+                <a href="{{ route('notifications') }}" class="nav-item nav-link fw-bold">Notifications</a>
                 <div class="nav-item dropdown">
                 </div>
                 <a href="http://127.0.0.1:8000/weare" class="nav-item nav-link fw-bold">About us</a>

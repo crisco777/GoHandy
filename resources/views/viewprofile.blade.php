@@ -27,7 +27,7 @@
                     <div class="work">
                         <h1 class="heading">experience</h1>
                         <div class="primary">
-
+                            <span>Edit</span>
                             <p> I have developed a diverse skill set that encompasses a wide range of practical and
                                 technical abilities. My background includes hands-on work in areas such as carpentry,
                                 plumbing, electrical work, and general maintenance. I am adept at problem-solving, quick
@@ -46,12 +46,20 @@
                                 <li style="--i:2">Cutting and assembly</li>
                                 <li style="--i:3">Furniture repair</li>
                             </ul>
-
+                            <span>Edit</span>
                         </div>
                     </div>
 
                     <!-- ===== ===== Skills Contaienr ===== ===== -->
-
+                    <div class="skills">
+                        <h1 class="heading"> Contact</h1>
+                        <ul>
+                            <li style="--i:0"> instagram</li>
+                            <li style="--i:0"> facebook</li>
+                            <li style="--i:0"> outlook</li>
+                            <li style="--i:0"> whatsapp</li>
+                        </ul>
+                    </div>
                 </section>
 
 
@@ -117,22 +125,22 @@
                         <h1 class="heading">Contact Information</h1>
                         <ul>
                             <li class="phone">
-                                <h3 class="label">Phone:</h3>
+                                <h4 class="label">Phone:</h4>
                                 <span class="info">+503 7653 2482</span>
                             </li>
 
                             <li class="address">
-                                <h3 class="label">Address:</h3>
+                                <h4 class="label">Address:</h4>
                                 <span class="info">Carr. Panamericana, Santa Tecla <br></span>
                             </li>
 
                             <li class="email">
-                                <h3 class="label">E-mail:</h3>
+                                <h4 class="label">E-mail:</h4>
                                 <span class="info">nlinares31@gmail.com</span>
                             </li>
 
                             <li class="site">
-                                <h3 class="label">Site:</h3>
+                                <h4 class="label">Site:</h4>
                                 <span class="info">www.rsmarquetech.com</span>
                             </li>
                         </ul>

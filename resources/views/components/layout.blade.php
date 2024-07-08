@@ -42,7 +42,7 @@
 </head>
 
 <body  style="font-family: Gotham">
-@if (!Request::is( 'profcomplete', 'hired', 'login'))
+@if (!Request::is( 'profcomplete', 'hired'))
     <x-nav.navbar/>
     <div style="padding-top: 0px">
         {{ $slot }}

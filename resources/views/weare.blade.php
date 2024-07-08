@@ -1,4 +1,5 @@
 <x-layout>
+
     @push('css')
         <style>
             #content {
@@ -210,8 +211,8 @@
     @endpush
 
     <div id="content" class="position-relative">
-        <div class="row text-white text-center align-items-center mx-0"
-            style="height: calc(100vh - 73px); font-family: 'Bevan', serif">
+        <div class="row text-white text-center align-items-center mx-0 fw-bold"
+            style="height: calc(100vh - 73px);">
             <h2>Nosotros somos <br> GoHandy</h2>
         </div>
         <div class=" godown"></div>
@@ -221,7 +222,7 @@
 
     <section id="about">
         <div class="about-1">
-            <h1 class="text-black" style="font-family: 'bevan'; text-align:center">Quiénes somos</h1>
+            <h1 class="text-black fw-bold" style="text-align:center">Quiénes somos</h1>
         </div>
 
         <div class="mt-4" id="about-2">
@@ -254,7 +255,7 @@
         </div>
 
         <div class="about-1">
-            <h1 class="text-black mt-5" style="font-family: 'bevan'; text-align:center">Nuestros valores</h1>
+            <h1 class="text-black mt-5 fw-bold" style=" text-align:center">Nuestros valores</h1>
         </div>
 
         <div class="mt-4" id="about-2">

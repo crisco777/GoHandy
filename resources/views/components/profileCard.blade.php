@@ -36,8 +36,8 @@
                     style="padding: 2vh">
             </figure>
 
-            <div class="contenido">
-                <h3 style="font-family: bevan" >{{ $user->firstname }} {{ $user->lastname }}</h3>
+            <div class="contenido fw-bold">
+                <h3 >{{ $user->firstname }} {{ $user->lastname }}</h3>
                 <h6>Edad: {{ $user->age }} </h6>
                 <h6>Sexo: {{ $user->sex->type }} </h6>
                 <h6 class="my-1">Servicios disponibles: </h6>

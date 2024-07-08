@@ -143,4 +143,13 @@ Route::get('home', function () {
 Route::get('logintry', function (){
     return view('logintry');
 })->name('logintry');
+Route::get('notifications', function () {
+    return view('notifications');
+})->name('notifications');
+
+Route::get('viewprofile', function () {
+    return view('viewprofile');
+})->name('viewprofile');
+
+
 

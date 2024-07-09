@@ -38,15 +38,28 @@
 
             <div class="contenido fw-bold">
                 <h3 >{{ $user->firstname }} {{ $user->lastname }}</h3>
-                <h6>Edad: {{ $user->age }} </h6>
-                <h6>Sexo: {{ $user->sex->type }} </h6>
-                <h6 class="my-1">Servicios disponibles: </h6>
-                    @foreach ($user->services as $service)
-                        <p class="my-0"> {{ $service->type }}</p>
-                    @endforeach
-                <h6>Municipio: {{ $user->town->name }}</h6>
-                <h6>Número de contacto: {{ $user->contact }}</h6>
-                <a href="{{ route('services.profile', ['user' => $user->id]) }}">
+                <div
+                @guest
+                    style="filter: blur(5px)"
+                @endguest
+                >
+                    <h6>Edad: {{ $user->age }} </h6>
+                    <h6>Sexo: {{ $user->sex->type }} </h6>
+                    <h6 class="my-1">Servicios disponibles: </h6>
+                        @foreach ($user->services as $service)
+                            <p class="my-0"> {{ $service->type }}</p>
+                        @endforeach
+                    <h6>Municipio: {{ $user->town->name }}</h6>
+                    <h6>Número de contacto: {{ $user->contact }}</h6>
+                </div>
+                <a
+                @guest
+                    href="{{ route('login') }}"
+                @endguest
+                @auth
+                    href="{{ route('services.profile', ['user' => $user->id]) }}"
+                @endauth
+                >
                     <button style="background-color: #090539" type="button" class="btn text-white my-3">Ver
                         perfil</button>
                 </a>

@@ -26,7 +26,7 @@ Route::get('login', function () {
     return view('login', [
         'roles' => Role::all(),
     ]);
-});
+})->name('login');
 
 Route::post('/login', function () {
     $attributes = request()->validate([
@@ -140,9 +140,6 @@ Route::get('home', function () {
     return view('home');
 })->name('home');
 
-Route::get('logintry', function (){
-    return view('logintry');
-})->name('logintry');
 Route::get('notifications', function () {
     return view('notifications');
 })->name('notifications');
@@ -151,5 +148,7 @@ Route::get('viewprofile', function () {
     return view('viewprofile');
 })->name('viewprofile');
 
-
+Route::get('plans', function () {
+    return view('plans');
+})->name('plans');
 

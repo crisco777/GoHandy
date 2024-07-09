@@ -145,9 +145,24 @@
                             <x-input label="Email" name="email" type="email" form="register"/>
                             <x-input label="Password" name="password" type="password" form="register"/>
                             <x-input label="Password Confirmation" name="password_confirmation" type="password" form="register"/>
+                            <span class="mb-4">¿Qué quieres hacer?</span>
+
+                            <div class="d-flex flex-row mb-2">
+                                @foreach ($roles as $role)
+                                    <div class="form-check col-6">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="role_id"
+                                                value="{{ $role->id }}">
+                                            {{ $role->type }}
+                                        </label>
+                                    </div>
+                                @endforeach
+                            </div>
                             <x-button label="Register" type="submit"/>
                         </form>
                     </div>
+
+
 
                     <!-- IMAGE OVERLAY -->
                     <div class="overlay-container position-absolute top-0 start-50 w-50 overflow-hidden h-100"
@@ -157,7 +172,7 @@
                                 class="overlay-panel overlay-left px-5 position-absolute d-flex flex-column
                                     justify-content-center align-items-center text-center top-0 w-50 h-100">
                                     <div class="mt-5">
-                                        <h1 class="title pt-1 mt-2"> Hello <br> Alumni</h1>
+                                        <h1 class="title pt-1 mt-2"> Welcome to <br> GoHandy</h1>
                                         <p class="pb-5">If You Have An Account, Login Here And Have Fun!</p>
                                         <x-button label="Login" id="login"/>
                                     </div>
@@ -165,10 +180,10 @@
                             <div
                                 class="overlay-panel overlay-right px-5 position-absolute d-flex flex-column
                                     justify-content-center align-items-center text-center top-0 w-50 h-100 end-0">
-                                    <div class="mt-4">
+                                    <div class="mt-4 " @csrf>
                                         <h1 class="title mt-2">Start Your <br> Journy Now</h1>
                                         <p class="pb-5">If You Don't Have An Account Yet, Join Us And Start Your Journey</p>
-                                        <x-button label="Register" id="register"/>
+                                        <x-button label="Register" id="register" type="submit"/>
                                     </div>
                             </div>
                         </div>
@@ -177,4 +192,6 @@
             </div>
         </div>
     </div>
+
+    {{ $errors }}
 </x-layout>

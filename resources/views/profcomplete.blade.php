@@ -3,8 +3,9 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
+<div class="container mt-5 mb-5">
 
-    <div class="wrapper" style="width: 100vh;">
+    <div class="wrapper rounded-4" style="width: 200vh;">
         <span style="font-family: Bevan; font-size:30px">Registration</span>
         <form action="/profcomplete" method="POST">
             @csrf
@@ -60,4 +61,5 @@
                 <input style="background-color: #050A30; color:white " type="Submit" value="Register Now">
             </div>
         </form>
+</div>
 </x-layout>

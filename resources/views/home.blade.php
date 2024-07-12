@@ -15,9 +15,9 @@
                             <div class="position-relative w-75 mx-auto animated slideInDown">
                                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
                                     placeholder="Search Service">
-                                <button type="button"
-                                    class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                                    style="margin-top: 7px;">Search</button>
+                                <button style: background-color:#ac3d2 type="button"
+                                    class="btn rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
+                                    style="margin-top: 7px; background-color">Search</button>
                             </div>
                         </div>
                     </div>

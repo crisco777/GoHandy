@@ -29,10 +29,14 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     transition: .5s;
+    background-color: #ac3d21;
+    color: #FFFFFF;
 }
 
 .btn.btn-primary,
-.btn.btn-secondary {
+.btn.p {
+
+    background-color: #ac3d21;
     color: #FFFFFF;
 }
 

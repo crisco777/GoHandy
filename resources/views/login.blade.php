@@ -182,7 +182,7 @@
                                     justify-content-center align-items-center text-center top-0 w-50 h-100 end-0">
                                     <div class="mt-4 " @csrf>
                                         <h1 class="title mt-2">Start Your <br> Journy Now</h1>
-                                        <p class="pb-5">If You Don't Have An Account Yet, Join Us And Start Your Journey</p>
+                                         <p class="pb-5">If You Don't Have An Account Yet, Join Us And Start Your Journey</p>
                                         <x-button label="Register" id="register" type="submit"/>
                                     </div>
                             </div>

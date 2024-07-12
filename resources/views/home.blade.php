@@ -145,7 +145,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/carpintero.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/carpintero.jpg') }}" alt="">
                             </div>
                             <div class="d-flex border-bottom">
 
@@ -166,7 +166,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/plomero.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/plomero.jpg') }}" alt="">
                             </div>
                             <div class="text-center p-4">
                                 <div class="mb-3">
@@ -184,7 +184,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/cocinera.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/chef.jpg') }}" alt="">
                             </div>
                             <div class="d-flex border-bottom">
 
@@ -209,7 +209,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/mecanico.jfif" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/mecanico.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex border-bottom">
 
@@ -230,7 +230,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/pintor.jpg" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/pintor.jpg') }}" alt="">
 
                                 </div>
                                 <div class="text-center p-4">
@@ -249,7 +249,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/electricista.jpg" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/electricista.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex border-bottom">
 

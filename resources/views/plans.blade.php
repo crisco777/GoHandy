@@ -1,23 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
 <style>
     body {
         background: rgb(44, 44, 44);
         background: linear-gradient(90deg, rgba(44, 44, 44, 1) 0%, rgba(44, 58, 79, 1) 50%, rgba(44, 44, 44, 1) 100%);
     }
 
+
     .content {
 
         text-align: center;
-        color: white;
-
-
+        color: #ffffff;
     }
 
     .row {
         text-align: center;
-        position: fixed;
+        position: absolute;
         left: 5%;
         right: 5%;
         color: #2C3A4F;
@@ -25,28 +32,64 @@
 
     .card {
         width: 100%;
-        height: 105%;
-        background-color: #2C3A4F;
+        height: 180%;
+        background-color: #ffffff;
         -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
     }
 
     .card-body {
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     .btn {
         font-size: 175%;
-        color: white;
-
-
+        color: #ac3d21;
     }
 </style>
-<x-layout>
 
-    <div class="content">
-        <h1>Choose your ideal plan!</h1>
+<link href="{{ asset("css/style.css") }}" rel="stylesheet">
+
+
+<div class="container mb-5 ">
+    <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5">
+        <a href="{{route('home')}}" class="navbar-brand p-0">
+            <h1 class="m-0 fw-bold fw-2000 text-primary" style="font-family: 'Nunito', sans-serif; "></i>GoHandy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto "
+            >
+                <a href="{{ route('home') }}" class="nav-item nav-link fw-bold {{ request()->is('home') ? 'active' : ''}}">Home</a>
+                <a href="{{ route('services') }}" class="nav-item nav-link fw-bold {{ request()->is('services') ? 'active' : ''}} ">Services</a>
+                <a
+                @guest
+                    href="{{ route('login') }}"
+                @endguest
+                @auth
+                    href="{{ route('plans') }}"
+                @endauth
+                >
+                <a href="{{ route('plans') }}" class="nav-item nav-link fw-bold {{ request()->is('premium') ? 'active' : ''}}">Premium</a>
+                <a href="{{ route('viewprofile') }}" class="nav-item nav-link fw-bold {{ request()->is('viewprofile') ? 'active' : ''}}">Profile</a>
+                <a href="{{ route('notifications') }}" class="nav-item nav-link fw-bold {{ request()->is('notifications') ? 'active' : ''}}">Notifications</a>
+                <div class="nav-item dropdown">
+                </div>
+                <a href="http://127.0.0.1:8000/weare" class="nav-item nav-link fw-bold {{ request()->is('weare') ? 'active' : ''}}">About us</a>
+            </div>
+            <a href="http://127.0.0.1:8000/login" class="btn btn-primary rounded-pill py-2 px-4 fw-bold {{ request()->is('login') ? 'active' : ''}}">Register</a>
+        </div>
+    </nav>
+</div>
+
+
+<body class="" style="margin-top:18vh">
+    <div class="content mt-5" style="margin-top: 50px">
+        <h1 >Choose your ideal plan!</h1>
         <p>
             Enjoy all the benefits that GoHandy offers to you with these plans.
             <br>
@@ -61,14 +104,7 @@
             <div class="card">
                 <div class="card-body">
                     <a href="#" class="btn">Free Trial</a>
-                    <p class="card-text">
-                        -We give you up to 3 negotiations with contractors with no time restriction
-                        <br>
-                        -Create and customize your basic tasker profile and publish your services in no more than one
-                        category.
-                        <br>
-                        -You can not add samples of your previous work and will not be certified.
-                    </p>
+                    <p class="card-text">Two negotiations with up to two taskers with no time limit.</p>
 
                 </div>
             </div>
@@ -76,21 +112,9 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <a href="#" class="btn">Tasker Pass</a>
-                    <p class="card-text">
-                        -Enables all our options and benefits for you as a tasker.
-                        <br>
-                        -Delete all advertisements on the website.
-                        <br>
-                        -Add samples of your work.
-                        <br>
-                        -Increased visibility in searches.
-                        -Access to ratings and reviews that feature your profile.
-                        <br>
-                        -Offer your services in as many categories as you want.
-                        <br>
-                        -Unlimited negotiations with clients for a period of 60 days.
-                    </p>
+                    <a href="#" class="btn">HandyPass</a>
+                    <p class="card-text">Includes access to the negotiation option with all GoHandy workers within a
+                        period of 30 day.</p>
 
                 </div>
             </div>
@@ -98,22 +122,23 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <a href="#" class="btn">Publicity option</a>
+                    <a href="#" class="btn">HandyVIP</a>
                     <p class="card-text">
-                        -Increasing your visibility on the website so more clients get to know about your services.
+                        -Deletes all advertisements on the website.
                         <br>
-                        -You will get specially publicized and recommended on our platform for a span of 30 days.
-                        <br>
-                        -A discount will be offered to you if you contract it at the same time as your first subscription.</p>
+                        -Expands your subscription up to 60 days and includes all the HandyPass benefits.
+                    </p>
 
                 </div>
             </div>
         </div>
     </div>
 
+</body>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
 
-</x-layout>
-
+</html>

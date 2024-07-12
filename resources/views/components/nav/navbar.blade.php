@@ -2,7 +2,7 @@
 
 
 <div class="container ">
-    <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 sticky-top">
+    <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 ">
         <a href="{{route('home')}}" class="navbar-brand p-0">
             <h1 class="m-0 fw-bold fw-2000 text-primary" style="font-family: 'Nunito', sans-serif; "></i>GoHandy</h1>
         </a>
@@ -15,6 +15,14 @@
             >
                 <a href="{{ route('home') }}" class="nav-item nav-link fw-bold {{ request()->is('home') ? 'active' : ''}}">Home</a>
                 <a href="{{ route('services') }}" class="nav-item nav-link fw-bold {{ request()->is('services') ? 'active' : ''}} ">Services</a>
+                <a
+                @guest
+                    href="{{ route('login') }}"
+                @endguest
+                @auth
+                    href="{{ route('plans') }}"
+                @endauth
+                >
                 <a href="{{ route('plans') }}" class="nav-item nav-link fw-bold {{ request()->is('premium') ? 'active' : ''}}">Premium</a>
                 <a href="{{ route('viewprofile') }}" class="nav-item nav-link fw-bold {{ request()->is('viewprofile') ? 'active' : ''}}">Profile</a>
                 <a href="{{ route('notifications') }}" class="nav-item nav-link fw-bold {{ request()->is('notifications') ? 'active' : ''}}">Notifications</a>

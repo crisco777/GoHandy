@@ -1,8 +1,7 @@
 @push('css')
     <style>
         body {
-            background-color: #8BC6EC;
-            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            background-color: #2c3a4f;
         }
 
         .card {
@@ -66,3 +65,5 @@
             </div>
     </div>
 </div>
+
+

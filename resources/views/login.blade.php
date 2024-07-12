@@ -193,5 +193,5 @@
         </div>
     </div>
 
-    {{ $errors }}
+
 </x-layout>

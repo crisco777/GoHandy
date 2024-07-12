@@ -6,7 +6,7 @@
 <div class="container mt-5 mb-5">
 
     <div class="wrapper rounded-4" style="width: 200vh;">
-        <span style="font-family: Bevan; font-size:30px">Registration</span>
+        <span style="font-size:30px; color:white" class="fw-bold">Registration</span>
         <form action="/profcomplete" method="POST">
             @csrf
             <div class="input-box">

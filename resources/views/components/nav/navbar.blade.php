@@ -4,8 +4,7 @@
 <div class="container ">
     <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 ">
         <a href="{{route('home')}}" class="navbar-brand p-0">
-            <h1 class="m-0 fw-bold fw-2000 text-primary" style="font-family: 'Nunito', sans-serif; "></i>GoHandy</h1>
-        </a>
+            <img class="img-fluid" src="{{ asset('img/logo- blanco.png') }}" alt="">        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>

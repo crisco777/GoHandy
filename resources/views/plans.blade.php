@@ -81,7 +81,7 @@
                 </div>
                 <a href="http://127.0.0.1:8000/weare" class="nav-item nav-link fw-bold {{ request()->is('weare') ? 'active' : ''}}">About us</a>
             </div>
-            <a href="http://127.0.0.1:8000/login" class="btn btn-primary rounded-pill py-2 px-4 fw-bold {{ request()->is('login') ? 'active' : ''}}">Register</a>
+            <a href="http://127.0.0.1:8000/login" class="btn rounded-pill py-2 px-4 fw-bold {{ request()->is('login') ? 'active' : ''}}">Register</a>
         </div>
     </nav>
 </div>

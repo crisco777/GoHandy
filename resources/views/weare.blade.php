@@ -55,13 +55,8 @@
                 margin-bottom: 10px;
             }
 
-            .about-item hr {
-                width: 46px;
-                height: 3px;
-                background-color: #5fbff9;
-                margin: 0 auto;
-                border: none;
-            }
+
+            
 
             .about-item p {
                 margin-top: 20px;

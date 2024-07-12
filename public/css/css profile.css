@@ -1,5 +1,5 @@
 body {
-    background: rgb(99, 39, 120)
+    background: rgb(99, 39, 110);
 }
 
 .form-control:focus {
@@ -40,5 +40,9 @@ body {
     background: #BA68C8;
     color: #fff;
     cursor: pointer;
-    border: solid 1px #BA68C8
+    border: solid 10px #BA68C8;
 }
+.profile{height: 210; width: 210;
+margin-top: 30;}
+
+

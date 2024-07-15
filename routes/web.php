@@ -149,8 +149,14 @@ Route::get('viewprofile', function () {
 })->name('viewprofile');
 
 
+/*
 Route::get('plans', function () {
     return view('plans',[
         'userrole' => Auth::user()->role_id,
    ]);
+})->name('plans');
+*/
+
+Route::get('plans', function () {
+    return view('plans');
 })->name('plans');

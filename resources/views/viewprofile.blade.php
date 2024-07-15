@@ -14,7 +14,7 @@
 
                 <section class="userProfile card ">
                     <div class="profile ">
-                        <figure><img src="{{ asset('img/taylor.jpg') }} " alt="profile" width="250px" height="250px">
+                        <figure><img src="{{ asset('img/taylor.jpg') }} " alt="profile" width="230px" height="230px">
                         </figure>
                     </div>
                 </section>

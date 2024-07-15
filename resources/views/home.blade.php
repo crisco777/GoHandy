@@ -15,9 +15,9 @@
                             <div class="position-relative w-75 mx-auto animated slideInDown">
                                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
                                     placeholder="Search Service">
-                                <button type="button"
-                                    class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                                    style="margin-top: 7px;">Search</button>
+                                <button style: background-color:#ac3d2 type="button"
+                                    class="btn rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
+                                    style="margin-top: 7px; background-color">Search</button>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/carpintero.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/carpintero.jpg') }}" alt="">
                             </div>
                             <div class="d-flex border-bottom">
 
@@ -166,7 +166,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/plomero.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/plomero.jpg') }}" alt="">
                             </div>
                             <div class="text-center p-4">
                                 <div class="mb-3">
@@ -184,7 +184,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="package-item">
                             <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/cocinera.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/chef.jpg') }}" alt="">
                             </div>
                             <div class="d-flex border-bottom">
 
@@ -209,7 +209,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/mecanico.jfif" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/mecanico.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex border-bottom">
 
@@ -230,7 +230,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/pintor.jpg" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/pintor.jpg') }}" alt="">
 
                                 </div>
                                 <div class="text-center p-4">
@@ -249,7 +249,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="package-item">
                                 <div class="overflow-hidden">
-                                    <img class="img-fluid" src="img/electricista.jpg" alt="">
+                                    <img class="img-fluid" src="{{ asset('img/electricista.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex border-bottom">
 

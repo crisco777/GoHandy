@@ -118,7 +118,7 @@
 <x-layout title="Login">
     <div class="container">
         <div class="d-flex justify-content-center align-items-center min-vh-100">
-            <div class="card border-0 rounded-4 shadow-lg mw-100" style="width: 768px;">
+            <div class="card border-0 rounded-4 shadow-lg mw-100" style="width: 768px; margin-top:12vh;">
                 <div class="card-body position-relative rounded-4" id="container"
                      style="overflow: hidden; min-height: 500px;">
                     <!-- LOGIN -->
@@ -168,6 +168,7 @@
                     <div class="overlay-container position-absolute top-0 start-50 w-50 overflow-hidden h-100"
                          style="z-index: 100">
                         <div class="overlay">
+
                             <div
                                 class="overlay-panel overlay-left px-5 position-absolute d-flex flex-column
                                     justify-content-center align-items-center text-center top-0 w-50 h-100">
@@ -180,9 +181,9 @@
                             <div
                                 class="overlay-panel overlay-right px-5 position-absolute d-flex flex-column
                                     justify-content-center align-items-center text-center top-0 w-50 h-100 end-0">
-                                    <div class="mt-4 " @csrf>
+                                    <div class="mt-4 "> @csrf
                                         <h1 class="title mt-2">Start Your <br> Journy Now</h1>
-                                         <p class="pb-5">If You Don't Have An Account Yet, Join Us And Start Your Journey</p>
+                                        <p class="pb-5">If You Don't Have An Account Yet, Join Us And Start Your Journey</p>
                                         <x-button label="Register" id="register" type="submit"/>
                                     </div>
                             </div>

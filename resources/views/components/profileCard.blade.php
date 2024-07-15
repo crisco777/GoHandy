@@ -1,8 +1,7 @@
 @push('css')
     <style>
         body {
-            background-color: #8BC6EC;
-            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            background-color: #2c3a4f;
         }
 
         .card {
@@ -52,6 +51,7 @@
                     <h6>Municipio: {{ $user->town->name }}</h6>
                     <h6>Número de contacto: {{ $user->contact }}</h6>
                 </div>
+
                 <a
                 @guest
                     href="{{ route('login') }}"
@@ -63,6 +63,9 @@
                     <button style="background-color: #090539" type="button" class="btn text-white my-3">Ver
                         perfil</button>
                 </a>
+                
             </div>
     </div>
 </div>
+
+

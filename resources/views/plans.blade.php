@@ -32,7 +32,7 @@
 
     .card {
         width: 100%;
-        height: 180%;
+        height: 100%;
         background-color: #ffffff;
         -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
@@ -49,39 +49,39 @@
     }
 </style>
 
-<link href="{{ asset("css/style.css") }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 
 <div class="container mb-5 ">
     <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5">
-        <a href="{{route('home')}}" class="navbar-brand p-0">
-            <h1 class="m-0 fw-bold fw-2000 text-primary" style="font-family: 'Nunito', sans-serif; "></i>GoHandy</h1>
-        </a>
+        <a href="{{ route('home') }}" class="navbar-brand p-0">
+            <img class="img-fluid" src="{{ asset('img/logo-blanco.png') }}" alt=""> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto "
-            >
-                <a href="{{ route('home') }}" class="nav-item nav-link fw-bold {{ request()->is('home') ? 'active' : ''}}">Home</a>
-                <a href="{{ route('services') }}" class="nav-item nav-link fw-bold {{ request()->is('services') ? 'active' : ''}} ">Services</a>
-                <a
-                @guest
-                    href="{{ route('login') }}"
-                @endguest
-                @auth
-                    href="{{ route('plans') }}"
-                @endauth
-                >
-                <a href="{{ route('plans') }}" class="nav-item nav-link fw-bold {{ request()->is('premium') ? 'active' : ''}}">Premium</a>
-                <a href="{{ route('viewprofile') }}" class="nav-item nav-link fw-bold {{ request()->is('viewprofile') ? 'active' : ''}}">Profile</a>
-                <a href="{{ route('notifications') }}" class="nav-item nav-link fw-bold {{ request()->is('notifications') ? 'active' : ''}}">Notifications</a>
-                <div class="nav-item dropdown">
-                </div>
-                <a href="http://127.0.0.1:8000/weare" class="nav-item nav-link fw-bold {{ request()->is('weare') ? 'active' : ''}}">About us</a>
+            <div class="navbar-nav ms-auto ">
+                <a href="{{ route('home') }}"
+                    class="nav-item nav-link fw-bold {{ request()->is('home') ? 'active' : '' }}">Home</a>
+                <a href="{{ route('services') }}"
+                    class="nav-item nav-link fw-bold {{ request()->is('services') ? 'active' : '' }} ">Services</a>
+                <a @guest
+href="{{ route('login') }}" @endguest @auth
+href="{{ route('plans') }}" @endauth>
+                    <a href="{{ route('plans') }}"
+                        class="nav-item nav-link fw-bold {{ request()->is('premium') ? 'active' : '' }}">Premium</a>
+                    <a href="{{ route('viewprofile') }}"
+                        class="nav-item nav-link fw-bold {{ request()->is('viewprofile') ? 'active' : '' }}">Profile</a>
+                    <a href="{{ route('notifications') }}"
+                        class="nav-item nav-link fw-bold {{ request()->is('notifications') ? 'active' : '' }}">Notifications</a>
+                    <div class="nav-item dropdown">
+                    </div>
+                    <a href="http://127.0.0.1:8000/weare"
+                        class="nav-item nav-link fw-bold {{ request()->is('weare') ? 'active' : '' }}">About us</a>
             </div>
-            <a href="http://127.0.0.1:8000/login" class="btn rounded-pill py-2 px-4 fw-bold {{ request()->is('login') ? 'active' : ''}}">Register</a>
+            <a href="http://127.0.0.1:8000/login"
+                class="btn rounded-pill py-2 px-4 fw-bold {{ request()->is('login') ? 'active' : '' }}">Register</a>
         </div>
     </nav>
 </div>
@@ -89,7 +89,7 @@
 
 <body class="" style="margin-top:18vh">
     <div class="content mt-5" style="margin-top: 50px">
-        <h1 >Choose your ideal plan!</h1>
+        <h1>Choose your ideal plan!</h1>
         <p>
             Enjoy all the benefits that GoHandy offers to you with these plans.
             <br>
@@ -104,7 +104,14 @@
             <div class="card">
                 <div class="card-body">
                     <a href="#" class="btn">Free Trial</a>
-                    <p class="card-text">Two negotiations with up to two taskers with no time limit.</p>
+                    <p class="card-text">Two negotiations with up to two taskers with no time limit.
+                        <br>
+                        -Adtional contracting fee.
+                    </p>
+                    <div>
+                            <img src="{{ asset('img/logo-color.png') }}" class="rounded-2 w-50" alt="team1"
+                                >
+                    </div>
 
                 </div>
             </div>
@@ -114,7 +121,13 @@
                 <div class="card-body">
                     <a href="#" class="btn">HandyPass</a>
                     <p class="card-text">Includes access to the negotiation option with all GoHandy workers within a
-                        period of 30 day.</p>
+                        period of 30 day.
+                        <br>
+                        -Add comments and evaluations.</p>
+                        <div>
+                            <img src="{{ asset('img/logo-color.png') }}" class="rounded-2 w-50" alt="team1"
+                                >
+                    </div>
 
                 </div>
             </div>
@@ -128,6 +141,10 @@
                         <br>
                         -Expands your subscription up to 60 days and includes all the HandyPass benefits.
                     </p>
+                    <div>
+                        <img src="{{ asset('img/logo-color.png') }}" class="rounded-2 w-50" alt="team1"
+                            >
+                </div>
 
                 </div>
             </div>

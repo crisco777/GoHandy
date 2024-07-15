@@ -4,8 +4,9 @@
 <div class="container ">
     <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 ">
         <a href="{{ route('home') }}" class="navbar-brand p-0">
-            <img class="img-fluid" src="{{ asset('img/logo- blanco.png') }}" alt=""> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <img class="img-fluid" src="{{ asset('img/logo-color.png') }}" alt=""> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
 

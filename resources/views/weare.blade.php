@@ -68,7 +68,7 @@
             }
 
             .about-item:hover {
-                background-color: #5fbff9;
+                background-color: #2c3a4f;
             }
 
             .about-item:hover i,
@@ -302,7 +302,7 @@
     <section class="cards">
 
         <div class="about-1">
-            <h1 class="text-white" style="font-family: 'bevan';text-align:center">Conoce a nuestro equipo</h1>
+            <h1 class="text-white" style="text-align:center">Conoce a nuestro equipo</h1>
         </div>
         <div id="about-2">
 

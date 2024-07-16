@@ -56,7 +56,7 @@
             }
 
 
-            
+
 
             .about-item p {
                 margin-top: 20px;
@@ -112,7 +112,7 @@
             .team .member .teampic {
                 overflow: hidden;
                 width: 150px;
-                border-radius: 50%;
+                border-radius: 10%;
             }
 
             .team .member .member-info {
@@ -369,6 +369,90 @@
                         <div class="member d-flex align-items-start">
                             <div class="teampic">
                                 <img src="{{ asset('img/kim.jpeg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/mariela.jpg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/mandy.jpg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/nelly.jpg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/naty.jpg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/devora.jpg') }}" class="img-fluid" alt="team1">
+                            </div>
+                            <div class="member-info">
+                                <h4>Kimberly Guzman</h4>
+                                <p>Centro ¡Supérate! Fundación Poma</p>
+                                <p>Junior</p>
+                                <p>Área: Fronted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="teampic">
+                                <img src="{{ asset('img/aless.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
                                 <h4>Kimberly Guzman</h4>

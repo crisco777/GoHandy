@@ -11,7 +11,7 @@
                     <div class="row justify-content-center py-5">
                         <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                             <h1 class="display-3 text-white mb-3 animated slideInDown">GoHandy</h1>
-                            <p class="fs-4 text-white mb-4 animated slideInDown">Connecting people, solving needs</p>
+                            <p class="fs-4 text-white mb-4 animated slideInDown">Connecting people, Solving needs</p>
                             <div class="position-relative w-75 mx-auto animated slideInDown">
                                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
                                     placeholder="Search Service">
@@ -39,8 +39,8 @@
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h6 class="section-title bg-white text-start text-primary pe-3">Description</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary">Go Handy</span></h1>
-                        <p class="mb-4">Go Handy is an online platform dedicated to connecting individuals seeking
+                        <h1 class="mb-4">Welcome to <span class="text-primary">GoHandy</span></h1>
+                        <p class="mb-4">GoHandy is an online platform dedicated to connecting individuals seeking
                             professional services with experts in a wide range of trades. Our goal is to simplify the
                             search and hiring of qualified professionals in various areas, providing both users and
                             independent workers with a space to interact and close deals efficiently and safely.</p>
@@ -78,8 +78,8 @@
         <div class="container-xxl py-5 destination">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">advertising</h6>
-                    <h1 class="mb-5">allied companies</h1>
+                    <h6 class="section-title bg-white text-center text-primary px-3">Advertising</h6>
+                    <h1 class="mb-5">Allied Companies</h1>
                 </div>
                 <div class="row g-3">
                     <div class="col-lg-7 col-md-6">
@@ -158,7 +158,7 @@
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                 </div>
-                                <p>carpenter</p>
+                                <p>Carpenter</p>
 
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                 </div>
-                                <p>plumber</p>
+                                <p>Plumber</p>
 
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                 </div>
-                                <p>Chef</p>
+                                <p>Gardener</p>
 
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
-                                    <p>mecanico</p>
+                                    <p>Mechanic</p>
 
                                 </div>
                             </div>
@@ -241,7 +241,7 @@
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
-                                    <p>pintor</p>
+                                    <p>Painter</p>
 
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
-                                    <p>electricista</p>
+                                    <p>Electricist</p>
 
                                 </div>
                             </div>
@@ -329,21 +329,21 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">customers</h6>
-                    <h1 class="mb-5">the most notable</h1>
+                    <h6 class="section-title bg-white text-center text-primary px-3">Customers</h6>
+                    <h1 class="mb-5">The Most Notable</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
 
                             <div class="card">
-                                <img class="card-img-top mx-auto mt-2" src="img/taylor.jpg" alt="" style="width: 200px; height: 250px">
+                                <img class="card-img-top mx-auto mt-2" src="img/team-1.jpg" alt="" style="width: 200px; height: 250px">
                             </div>
 
 
                             <div class="text-center p-4">
                                 <h5 class="mb-0">Taylor swift</h5>
-                                <small>Pintor</small>
+                                <small>Painter</small>
                             </div>
                         </div>
                     </div>
@@ -352,25 +352,25 @@
                         <div class="team-item">
 
                             <div class="card">
-                                <img class="card-img-top mx-auto mt-2" src="img/kanye-1.webp" alt="" style="width: 200px; height: 250px">
+                                <img class="card-img-top mx-auto mt-2" src="img/team-2.jpg" alt="" style="width: 200px; height: 250px">
                             </div>
 
 
                             <div class="text-center p-4">
                                 <h5 class="mb-0">The best ever</h5>
-                                <small>electricista</small>
+                                <small>Electricist</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="card">
-                                <img class="card-img-top mx-auto mt-2" src="img/lenny.webp" alt="" style="width: 200px; height: 250px">
+                                <img class="card-img-top mx-auto mt-2" src="img/team-3.jpg" alt="" style="width: 200px; height: 250px">
                             </div>
 
                             <div class="text-center p-4">
                                 <h5 class="mb-0">lenny kravitz</h5>
-                                <small>carpenter</small>
+                                <small>Carpenter</small>
                             </div>
                         </div>
                     </div>
@@ -378,7 +378,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
                             <div class="card">
-                                <img class="card-img-top mx-auto mt-2" src="img/ryan.webp" alt="" style="width: 200px; height: 250px">
+                                <img class="card-img-top mx-auto mt-2" src="img/team-4.jpg" alt="" style="width: 200px; height: 250px">
                             </div>
 
                             <div class="text-center p-4">
@@ -400,10 +400,10 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-white mb-3">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn" href="">About Us</a>
+                        <a class="btn" href="">Contact Us</a>
+                        <a class="btn" href="">Privacy Policy</a>
+                        <a class="btn" href="">Terms & Condition</a>
                     </div>
 
                     <div class="col-lg-3 col-md-6">

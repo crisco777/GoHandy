@@ -1,5 +1,6 @@
 <link href="{{ asset('css/notifications.css') }}" rel="stylesheet">
 <x-layout>
+    
     <div class="notifi-box mt-5 fw-bold" id="box ">
         <h2 class="fw-bold">Notifications <span>4</span></h2>
 

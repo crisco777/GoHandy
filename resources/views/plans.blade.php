@@ -46,6 +46,8 @@
     .btn {
         font-size: 175%;
         color: #ac3d21;
+        margin-bottom: 3vh;
+        margin-top: 1vh
     }
 </style>
 
@@ -104,12 +106,12 @@ href="{{ route('plans') }}" @endauth>
             <div class="card">
                 <div class="card-body">
                     <a href="#" class="btn">Free Trial</a>
-                    <p class="card-text">Two negotiations with up to two taskers with no time limit.
+                    <p class="card-text ">Two negotiations with up to two taskers with no time limit.
                         <br>
                         -Adtional contracting fee.
                     </p>
                     <div>
-                            <img src="{{ asset('img/logo-color.png') }}" class="rounded-2 w-50" alt="team1"
+                            <img src="{{ asset('img/logo-color.png') }}" class="rounded-2 w-50" alt="team1" style="margin-bottom: 4vh"
                                 >
                     </div>
 

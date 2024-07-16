@@ -14,12 +14,12 @@ class ServiceSeeder extends Seeder
     public function run(): void
     {
         $services = [
-            'Fontaneria',
-            'Carpinteria',
-            'Electricista',
-            'Albañileria',
-            'Servicio de pintura',
-            'Jardineria',
+            'Plumbing',
+            'Carpenter',
+            'Electricist',
+            'Masonry',
+            'Painting Service',
+            'Gardening',
 
         ];
 

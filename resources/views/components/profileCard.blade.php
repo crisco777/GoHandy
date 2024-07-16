@@ -31,7 +31,7 @@
 <div class="col-6 col-md-4">
         <div class="card w-100 h-100">
             <figure>
-                <img src="{{ asset('img/grupito.jpeg') }}" class="rounded-5 w-100 h-auto" alt="team1"
+                <img src="{{ asset('img/grupito.png') }}" class="rounded-5 w-100 h-auto" alt="team1"
                     style="padding: 2vh">
             </figure>
 
@@ -63,7 +63,7 @@
                     <button style="background-color: #090539" type="button" class="btn text-white my-3">Ver
                         perfil</button>
                 </a>
-                
+
             </div>
     </div>
 </div>

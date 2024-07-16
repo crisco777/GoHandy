@@ -3,18 +3,13 @@
     @push('css')
         <style>
             #content {
-                background: hsla(212, 75%, 16%, 0.685);
-                background: -webkit-linear-gradient(to right, hsla(204, 41%, 47%, 0.658), hsla(212, 75%, 16%, 0.692));
-                background: linear-gradient(to right, hsla(204, 41%, 47%, 0.664), hsla(210, 75%, 16%, 0.664)), url(img/grupito.jpeg);
+                background: linear-gradient(to right, hsla(204, 63%, 72%, 0.664), hsla(210, 75%, 16%, 0.664)), url(img/grupito.png);
                 height: 700px;
                 background-size: cover;
                 position: relative;
             }
 
-            .bg-color {
-                background-image: linear-gradient(to right, #91c8e4 0%, #4682a9 100%);
 
-            }
 
             /* por si pongo algo abajo del acerca de nosotros
                 .about-1 p{
@@ -39,7 +34,7 @@
                 left: 0;
                 border-width: 0 0 25vh calc(100vw - 37px);
                 border-style: solid;
-                border-color: transparent transparent #4682a9 transparent;
+                border-color: transparent transparent #2c3a4f transparent;
             }
 
             .about-item {
@@ -123,7 +118,7 @@
                 font-weight: 200;
                 margin-bottom: 5px;
                 font-size: 20px;
-                color: #2c74b3;
+                color: #2c3a4f;
             }
 
             .team .member span {
@@ -200,7 +195,7 @@
             }
 
             .cards {
-                background-color: #4682a9;
+                background-color: #2c3a4f;
             }
         </style>
     @endpush
@@ -208,16 +203,15 @@
     <div id="content" class="position-relative">
         <div class="row text-white text-center align-items-center mx-0 fw-bold"
             style="height: calc(100vh - 73px);">
-            <h2>Nosotros somos <br> GoHandy</h2>
+            <h2>We Are <br> GoHandy</h2>
         </div>
-        <div class=" godown"></div>
 
     </div>
 
 
     <section id="about">
         <div class="about-1">
-            <h1 class="text-black fw-bold" style="text-align:center">Quiénes somos</h1>
+            <h1 class="text-black fw-bold" style="text-align:center">About Us</h1>
         </div>
 
         <div class="mt-4" id="about-2">
@@ -385,7 +379,7 @@
                                 <img src="{{ asset('img/mariela.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Mariela Gómez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>
@@ -399,7 +393,7 @@
                                 <img src="{{ asset('img/mandy.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Amanda Belen</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>
@@ -413,7 +407,7 @@
                                 <img src="{{ asset('img/nelly.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Nelly Guzman</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>
@@ -427,7 +421,7 @@
                                 <img src="{{ asset('img/naty.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Natalia Diaz</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>
@@ -441,7 +435,7 @@
                                 <img src="{{ asset('img/devora.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Devora Guzman</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>
@@ -455,7 +449,7 @@
                                 <img src="{{ asset('img/aless.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Alessandro Linares</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
                                 <p>Junior</p>
                                 <p>Área: Fronted</p>

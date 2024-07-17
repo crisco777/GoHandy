@@ -342,7 +342,7 @@
 
 
                             <div class="text-center p-4">
-                                <h5 class="mb-0">Taylor swift</h5>
+                                <h5 class="mb-0">Carlos Contreras</h5>
                                 <small>Painter</small>
                             </div>
                         </div>
@@ -357,7 +357,7 @@
 
 
                             <div class="text-center p-4">
-                                <h5 class="mb-0">The best ever</h5>
+                                <h5 class="mb-0">michel Sanchez</h5>
                                 <small>Electricist</small>
                             </div>
                         </div>
@@ -382,7 +382,7 @@
                             </div>
 
                             <div class="text-center p-4">
-                                <h5 class="mb-0">Ryan</h5>
+                                <h5 class="mb-0">Camila Erroa</h5>
                                 <small>Plumber</small>
                             </div>
                         </div>

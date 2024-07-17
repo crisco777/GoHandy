@@ -109,7 +109,7 @@ Route::get('/home', function () {
     }
 });
 */
-Route::view('weare', 'weare');
+Route::view('weare', 'weare')->name('weare');
 
 Route::get('viewprofile', function () {
     return view('viewprofile', [

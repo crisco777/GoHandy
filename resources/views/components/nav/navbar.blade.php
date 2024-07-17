@@ -29,7 +29,7 @@
                     class="nav-item nav-link fw-bold {{ request()->is('notifications') ? 'active' : '' }}">Notifications</a>
                 <div class="nav-item dropdown">
                 </div>
-                <a href="http://127.0.0.1:8000/weare"
+                <a href="{{ route('weare') }}"
                     class="nav-item nav-link fw-bold {{ request()->is('weare') ? 'active' : '' }}">About us</a>
             </div>
             <a href="http://127.0.0.1:8000/login"

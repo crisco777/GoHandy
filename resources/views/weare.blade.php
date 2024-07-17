@@ -221,21 +221,17 @@
                         <div class="col-6">
                             <div class="about-item text-center">
                                 <i class=""></i>
-                                <h3 style="font-family: 'bevan'">Misión</h3>
+                                <h3 style="font-family: 'bevan'">Mision</h3>
                                 <hr>
-                                <p>Ofrecer un espacio que brinde una amplia gama de servicios domésticos de alta
-                                    calidad para satisfacer las necesidades de nuestros clientes, brindando
-                                    soluciones efectivas, accesibles y confiables.</p>
+                                <p>We want to offer a space that provides a wide range of high quality domestic services to meet the needs of our customers, providing effective, affordable and reliable solutions.</p>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="about-item text-center">
                                 <i class=""></i>
-                                <h3 style="font-family: 'bevan'">Visión</h3>
+                                <h3 style="font-family: 'bevan'">Vision</h3>
                                 <hr>
-                                <p>Ser la principal plataforma en línea para la contratación de servicios en el
-                                    pais, brindando a nuestros usuarios una plataforma confiable, eficiente y segura
-                                    que satisfaga todas sus necesidades. </p>
+                                <p>To be the main online platform for hiring domestic services in the country, providing our users with a reliable, efficient and secure platform that satisfies all their needs. </p>
                             </div>
                         </div>
                     </div>
@@ -244,7 +240,7 @@
         </div>
 
         <div class="about-1">
-            <h1 class="text-black mt-5 fw-bold" style=" text-align:center">Nuestros valores</h1>
+            <h1 class="text-black mt-5 fw-bold" style=" text-align:center">Our Values</h1>
         </div>
 
         <div class="mt-4" id="about-2">
@@ -254,31 +250,25 @@
                         <div class="col-4">
                             <div class="about-item text-center">
                                 <i class=""></i>
-                                <h3 style="font-family: 'bevan'">Integridad</h3>
+                                <h3 style="font-family: 'bevan'">Integrity</h3>
                                 <hr>
-                                <p>Go Handy busca asegurar a sus usuarios interesados en contratar que la persona
-                                    con la que están estableciendo contacto les brindará un servicio de la mejor
-                                    calidad, trabajando de manera honesta, consciente e integral.</p>
+                                <p>Go Handy seeks to assure its users interested in hiring that the person with whom they are establishing contact will provide them with the best quality service, working in an honest, and integral manner.</p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="about-item text-center">
                                 <i class=""></i>
-                                <h3 style="font-family: 'bevan'">Confianza</h3>
+                                <h3 style="font-family: 'bevan'">Confidence</h3>
                                 <hr>
-                                <p>El sitio trabaja a través de la confianza, garantizando tanto a nuestros usuarios
-                                    que buscan contratar un servicio como a los que están ofreciendo su trabajo. Un
-                                    sitio web construido en la confianza y que busca permitir un entorno seguro a
-                                    todos sus usuarios.</p>
+                                <p>Our site works through trust, guaranteeing both our users who are looking to hire a service and those who are offering their work. A website built on trust and that seeks to allow a safe environment for all its users.</p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="about-item text-center">
                                 <i class=""></i>
-                                <h3 style="font-family: 'bevan'">Compromiso</h3>
+                                <h3 style="font-family: 'bevan'">Commitment</h3>
                                 <hr>
-                                <p>Brindar a los usuarios personas con responsabilidad y comprometidos a ofrecer y
-                                    realizar su trabajo de manera excelente.</p>
+                                <p>Go Handy provides users with people who are responsible and committed to offer and perform their work in an excellent manner.</p>
                             </div>
                         </div>
                     </div>
@@ -291,7 +281,7 @@
     <section class="cards">
 
         <div class="about-1">
-            <h1 class="text-white" style="text-align:center">Conoce a nuestro equipo</h1>
+            <h1 class="text-white" style="text-align:center">Our team</h1>
         </div>
         <div id="about-2">
 
@@ -307,7 +297,7 @@
                             <div class="member-info">
                                 <h4>Ricardo Bautista</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Backend</p>
                             </div>
                         </div>
@@ -322,7 +312,7 @@
                             <div class="member-info">
                                 <h4>Nestor Ayala</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -335,9 +325,9 @@
                                 <img src="{{ asset('img/briss.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Brisslie Itzel</h4>
+                                <h4>Brisslie Gonzalez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -352,7 +342,7 @@
                             <div class="member-info">
                                 <h4>Alexandra Rodriguez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Marketing</p>
                             </div>
                         </div>
@@ -365,9 +355,9 @@
                                 <img src="{{ asset('img/kim.jpeg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Kimberly Guzman</h4>
+                                <h4>Kimberly Guzmán</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -381,8 +371,8 @@
                             <div class="member-info">
                                 <h4>Mariela Gómez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
-                                <p>Área: Fronted</p>
+                                <p>Senior</p>
+                                <p>Área: Backend</p>
                             </div>
                         </div>
                     </div>
@@ -393,9 +383,9 @@
                                 <img src="{{ asset('img/mandy.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Amanda Belen</h4>
+                                <h4>Amanda Hernández</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -407,9 +397,9 @@
                                 <img src="{{ asset('img/nelly.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Nelly Guzman</h4>
+                                <h4>Nelly Gomez</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -423,7 +413,7 @@
                             <div class="member-info">
                                 <h4>Natalia Diaz</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -435,9 +425,9 @@
                                 <img src="{{ asset('img/devora.jpg') }}" class="img-fluid" alt="team1">
                             </div>
                             <div class="member-info">
-                                <h4>Devora Guzman</h4>
+                                <h4>Devora Castro</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
@@ -451,7 +441,7 @@
                             <div class="member-info">
                                 <h4>Alessandro Linares</h4>
                                 <p>Centro ¡Supérate! Fundación Poma</p>
-                                <p>Junior</p>
+                                <p>Senior</p>
                                 <p>Área: Fronted</p>
                             </div>
                         </div>
